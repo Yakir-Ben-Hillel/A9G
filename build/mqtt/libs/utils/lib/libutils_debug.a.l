@@ -1,0 +1,10 @@
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/mqtt/libs/utils/obj/debug/api_debug.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/mqtt/libs/utils/obj/debug/assert.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/mqtt/libs/utils/obj/debug/buffer.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/mqtt/libs/utils/obj/debug/hal_gpio.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/mqtt/libs/utils/obj/debug/log2.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/mqtt/libs/utils/obj/debug/log2f.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/mqtt/libs/utils/obj/debug/math.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/mqtt/libs/utils/obj/debug/ntp.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/mqtt/libs/utils/obj/debug/stdlib.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/mqtt/libs/utils/obj/debug/time.o

@@ -1,0 +1,5 @@
+{
+    "files.associations": {
+        "demo_mqtt.h": "c"
+    }
+}

@@ -1,0 +1,68 @@
+-- System Version : WINDOWS
+---------------------------------------------------
+
+
+[MAKE]  init
+
+[AR]   libinit_debug.a
+ 
+
+
+[MAKE]  libs
+
+
+[MAKE]  libs/gps
+
+
+[MAKE]  libs/gps/minmea
+
+[AR]   libminmea_debug.a
+ 
+
+[AR]   libgps_debug.a
+        |
+         -- libminmea_debug.a
+ 
+
+
+[MAKE]  libs/utils
+
+[AR]   libutils_debug.a
+ 
+
+
+[MAKE]  libs/cjson
+
+[AR]   libcjson_debug.a
+ 
+
+[AR]   liblibs_debug.a
+        |
+         -- libgps_debug.a
+        |
+         -- libutils_debug.a
+        |
+         -- libcjson_debug.a
+ 
+
+
+[MAKE]  audio
+
+[AR]   libaudio_debug.a
+ 
+
+
+-----------------------------------------------
+[LDGEN]             >>> cust.ld
+[LD] 1:C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio//audio.elf 2:--oformat=elf32-littlemips 5:-just-symbols C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/platform/chip/rom/8955/lib/mem_bridge_rom_CHIP.elf 6: C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/cust.ld 7:--gc-sections  -LC:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib   -LC:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/libs/lib   -LC:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib      --start-group   -linit_debug  -llibs_debug  -laudio_debug --end-group -LC:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/platform/lib/gcc/mips-elf/4.4.2 -lgcc  --warn-common  --error-unresolved-symbols  8:C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio//audio.map  end1             audio.elf
+[ElfCombine]        Elf binary & map file
+
+[GEN]               strip platform symbol
+                    |
+                     --C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/platform/compilation/platform_symbols_to_strip
+
+[SREC]              audio.srec for flash/romulator
+[LOD]               C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/hex/audio/audio_flash.lod
+[LODCOMBINE]        Combine with Platform lod
+[LODCOMBINE]        Combine sucessful
+

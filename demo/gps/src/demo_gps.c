@@ -186,6 +186,7 @@ void gps_MainTask(void *pData)
     {
         if(OS_WaitEvent(gpsTaskHandle, (void**)&event, OS_TIME_OUT_WAIT_FOREVER))
         {
+            Trace(1,"*DEBUG* finished wait event.");
             EventDispatch(event);
             OS_Free(event->pParam1);
             OS_Free(event->pParam2);

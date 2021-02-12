@@ -1,0 +1,56 @@
+-- System Version : WINDOWS
+---------------------------------------------------
+
+
+[MAKE]  init
+
+[AR]   libinit_debug.a
+ 
+
+
+[MAKE]  libs
+
+
+[MAKE]  libs/gps
+
+
+[MAKE]  libs/gps/minmea
+
+[AR]   libminmea_debug.a
+ 
+
+[AR]   libgps_debug.a
+        |
+         -- libminmea_debug.a
+ 
+
+
+[MAKE]  libs/utils
+
+[AR]   libutils_debug.a
+ 
+
+
+[MAKE]  libs/cjson
+
+[AR]   libcjson_debug.a
+ 
+
+[AR]   liblibs_debug.a
+        |
+         -- libgps_debug.a
+        |
+         -- libutils_debug.a
+        |
+         -- libcjson_debug.a
+ 
+
+
+[MAKE]  demo/
+make[3]: *** No rule to make target 'all'.  Stop.
+C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/platform/compilation/cust_rules.mk:1031: recipe for target 'dependencies' failed
+make[2]: *** [dependencies] Error 2
+C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/platform/compilation/cust_rules.mk:749: recipe for target 'C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build///.srec' failed
+make[1]: *** [C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build///.srec] Error 2
+C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/platform/compilation/cust_rules.mk:396: recipe for target 'lod' failed
+make: *** [lod] Error 2

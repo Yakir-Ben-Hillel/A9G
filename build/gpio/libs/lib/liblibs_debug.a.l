@@ -1,0 +1,15 @@
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio/libs/obj/debug/api_debug.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio/libs/obj/debug/assert.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio/libs/obj/debug/buffer.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio/libs/obj/debug/cJSON.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio/libs/obj/debug/cJSON_Utils.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio/libs/obj/debug/gps.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio/libs/obj/debug/gps_parse.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio/libs/obj/debug/hal_gpio.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio/libs/obj/debug/log2.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio/libs/obj/debug/log2f.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio/libs/obj/debug/math.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio/libs/obj/debug/minmea.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio/libs/obj/debug/ntp.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio/libs/obj/debug/stdlib.o
+C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio/libs/obj/debug/time.o

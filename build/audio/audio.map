@@ -1,0 +1,271 @@
+Archive member included because of file (symbol)
+
+C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+                              (user_Main)
+C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+                              C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o) (audio_Main)
+
+Allocating common symbols
+Common symbol       size              file
+
+temp000___          0x4               C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+ .data          0x0000000000000000        0x0 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+ .bss           0x0000000000000000        0x0 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+ .pdr           0x0000000000000000       0x40 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+ .text          0x0000000000000000        0x0 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+ .data          0x0000000000000000        0x0 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+ .bss           0x0000000000000000        0x0 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+ .reginfo       0x0000000000000000       0x18 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+ .pdr           0x0000000000000000      0x140 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+ .text.CallbackData
+                0x0000000000000000       0x6c C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/platform/chip/rom/8955/lib/mem_bridge_rom_CHIP.elf
+                0xffffffff88240000                . = 0xffffffff88240000
+                0xffffffff88240000                __rom_start = .
+
+.section_init   0xffffffff88240000       0x10
+ *(.section_init)
+ .section_init  0xffffffff88240000        0x8 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+                0xffffffff88240010                . = ALIGN (0x10)
+ *fill*         0xffffffff88240008        0x8 00
+
+.cust_rotext    0xffffffff88240010      0x470
+ *(.text)
+ *(.text.*)
+ .text.user_Main
+                0xffffffff88240010       0x1c C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+                0xffffffff88240011                user_Main
+ .text.user_Init
+                0xffffffff8824002c       0x48 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+                0xffffffff8824002d                user_Init
+ .text.EventDispatch
+                0xffffffff88240074       0x60 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+                0xffffffff88240075                EventDispatch
+ .text.PlayCallback
+                0xffffffff882400d4       0x54 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+                0xffffffff882400d5                PlayCallback
+ .text.Music    0xffffffff88240128       0xd8 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+                0xffffffff88240129                Music
+ .text.LoopTest
+                0xffffffff88240200       0x60 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+                0xffffffff88240201                LoopTest
+ .text.CallbackResult
+                0xffffffff88240260       0x24 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+                0xffffffff88240261                CallbackResult
+ .text.RecordTest
+                0xffffffff88240284      0x10c C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+                0xffffffff88240285                RecordTest
+ .text.SecondTask
+                0xffffffff88240390       0x38 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+                0xffffffff88240391                SecondTask
+ .text.MainTask
+                0xffffffff882403c8       0x78 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+                0xffffffff882403c9                MainTask
+ .text.audio_Main
+                0xffffffff88240440       0x3c C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+                0xffffffff88240441                audio_Main
+ *(.stub .gnu.linkonce.t.*)
+                0xffffffff88240480                . = ALIGN (0x20)
+ *fill*         0xffffffff8824047c        0x4 00
+
+.cust_rodata    0xffffffff88240480      0x200
+ *(.rdata)
+ *(.rodata)
+ *(.rodata.*)
+ .rodata.str1.4
+                0xffffffff88240480      0x1fc C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+ *(.rodata.*_png)
+ *(.gnu.linkonce.r.*)
+ *(.rodata1)
+ *(.roresdata)
+ *(.robsdata)
+                0xffffffff88240680                . = ALIGN (0x20)
+ *fill*         0xffffffff8824067c        0x4 00
+                0xffffffff88240680                __user_rw_lma = .
+                0x0000000000000680                __rom_size = (__user_rw_lma - __rom_start)
+                0xffffffff82300000                . = 0xffffffff82300000
+
+.cust_data      0xffffffff82300000       0x10 load address 0xffffffff88240680
+                0xffffffff82300000                __user_rw_start = .
+ *(.data)
+ *(.data.*)
+ .data.recordFd
+                0xffffffff82300000        0x4 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+ .data.playEnd  0xffffffff82300004        0x1 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+ *(.gnu.linkonce.d.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0xffffffff82300010                . = ALIGN (0x10)
+ *fill*         0xffffffff82300005        0xb 00
+                0xffffffff82300010                __user_rw_end = .
+                0x0000000000000010                __user_rw_size = (__user_rw_end - __user_rw_start)
+                0xffffffff82300010                __user_bss_start = .
+
+.cust_bss       0xffffffff82300010       0x10
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+ .scommon       0xffffffff82300010        0x4 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+                0xffffffff82300010                temp000___
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.g_InterfaceVtbl
+                0xffffffff82300014        0x4 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+                0xffffffff82300014                g_InterfaceVtbl
+ .bss.mainTaskHandle
+                0xffffffff82300018        0x4 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+ .bss.secondTaskHandle
+                0xffffffff8230001c        0x4 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+ *(COMMON)
+ *(.rambss)
+                0xffffffff82300020                . = ALIGN (0x10)
+                0xffffffff82300020                __user_bss_end = .
+                0x0000000000000010                __user_bss_size = (__user_bss_end - __user_bss_start)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.reginfo        0x0000000000000000       0x18
+ .reginfo       0x0000000000000000       0x18 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+
+.mdebug.abi32   0x0000000000000000        0x0
+ .mdebug.abi32  0x0000000000000000        0x0 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+ .mdebug.abi32  0x0000000000000000        0x0 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+
+.gnu.attributes
+                0x0000000000000000       0x10
+ .gnu.attributes
+                0x0000000000000000       0x10 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+ .gnu.attributes
+                0x0000000000000010       0x10 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+
+.comment        0x0000000000000000       0x25
+ *(.comment)
+ .comment       0x0000000000000000       0x25 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+                                         0x26 (size before relaxing)
+ .comment       0x0000000000000000       0x26 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000       0x90
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x28 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+ .debug_aranges
+                0x0000000000000028       0x68 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+
+.debug_pubnames
+                0x0000000000000000       0xfb
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x0000000000000000       0x51 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+ .debug_pubnames
+                0x0000000000000051       0xaa C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+
+.debug_info     0x0000000000000000     0xa830
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000     0x52cc C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+ .debug_info    0x00000000000052cc     0x5564 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+
+.debug_abbrev   0x0000000000000000      0x4cb
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x24b C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+ .debug_abbrev  0x000000000000024b      0x280 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+
+.debug_line     0x0000000000000000      0x6ee
+ *(.debug_line)
+ .debug_line    0x0000000000000000      0x2f6 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+ .debug_line    0x00000000000002f6      0x3f8 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+
+.debug_frame    0x0000000000000000      0x16c
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x44 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+ .debug_frame   0x0000000000000044      0x128 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+
+.debug_str      0x0000000000000000     0x4b82
+ *(.debug_str)
+ .debug_str     0x0000000000000000     0x451b C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+                                       0x4728 (size before relaxing)
+ .debug_str     0x000000000000451b      0x667 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+                                       0x4cad (size before relaxing)
+
+.debug_loc      0x0000000000000000      0x370
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000       0x5c C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+ .debug_loc     0x000000000000005c      0x314 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.gptab.sdata
+ *(.gptab.data)
+ *(.gptab.sdata)
+
+.gptab.sbss
+ *(.gptab.bss)
+ *(.gptab.sbss)
+
+/DISCARD/
+ *(.rel.dyn)
+ *(.note.GNU-stack)
+ *(.eh_frame)
+START GROUP
+LOAD C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a
+LOAD C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/libs/lib\liblibs_debug.a
+LOAD C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a
+END GROUP
+LOAD C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/platform/lib/gcc/mips-elf/4.4.2\libgcc.a
+OUTPUT(C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio//audio.elf elf32-littlemips)
+
+.debug_ranges   0x0000000000000000       0x80
+ .debug_ranges  0x0000000000000000       0x20 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/init/lib\libinit_debug.a(sdk_init.o)
+ .debug_ranges  0x0000000000000020       0x60 C:/Users/HugElectronica/Desktop/ai-thinker/GPRS_C_SDK/build/audio/audio/lib\libaudio_debug.a(demo_audio.o)

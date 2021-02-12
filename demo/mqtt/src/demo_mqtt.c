@@ -349,7 +349,7 @@ void SecondTask(void *pData)
     ci.will_retain = 1;
     memcpy(strstr(willMsg,"GPRS")+5,imei,15);
     ci.will_msg = willMsg;
-
+    Trace(1,"*DEBUG* client user is:%s,client password is:%s\n",ci.client_user,ci.client_pass);
     err = MQTT_Connect(client,BROKER_IP,BROKER_PORT,OnMqttConnection,NULL,&ci);
     if(err != MQTT_ERROR_NONE)
         Trace(1,"MQTT connect fail,error code:%d",err);

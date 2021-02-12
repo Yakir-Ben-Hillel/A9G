@@ -1,0 +1,69 @@
+-- System Version : WINDOWS
+---------------------------------------------------
+
+
+[MAKE]  init
+
+[AR]   libinit_debug.a
+ 
+
+
+[MAKE]  libs
+
+
+[MAKE]  libs/gps
+
+
+[MAKE]  libs/gps/minmea
+
+[AR]   libminmea_debug.a
+ 
+
+[AR]   libgps_debug.a
+        |
+         -- libminmea_debug.a
+ 
+
+
+[MAKE]  libs/utils
+
+[AR]   libutils_debug.a
+ 
+
+
+[MAKE]  libs/cjson
+
+[AR]   libcjson_debug.a
+ 
+
+[AR]   liblibs_debug.a
+        |
+         -- libgps_debug.a
+        |
+         -- libutils_debug.a
+        |
+         -- libcjson_debug.a
+ 
+
+
+[MAKE]  demo/mqtt
+
+[CC]   demo_mqtt.o                 <== demo_mqtt.c
+[AR]   libmqtt_debug.a
+ 
+
+
+-----------------------------------------------
+[LDGEN]             >>> cust.ld
+[LD] 1:C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/mqtt//mqtt.elf 2:--oformat=elf32-littlemips 5:-just-symbols C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/platform/chip/rom/8955/lib/mem_bridge_rom_CHIP.elf 6: C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/mqtt/cust.ld 7:--gc-sections  -LC:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/mqtt/init/lib   -LC:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/mqtt/libs/lib   -LC:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/mqtt/demo/mqtt/lib      --start-group   -linit_debug  -llibs_debug  -lmqtt_debug --end-group -LC:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/platform/lib/gcc/mips-elf/4.4.2 -lgcc  --warn-common  --error-unresolved-symbols  8:C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/mqtt//mqtt.map  end1             mqtt.elf
+[ElfCombine]        Elf binary & map file
+
+[GEN]               strip platform symbol
+                    |
+                     --C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/platform/compilation/platform_symbols_to_strip
+
+[SREC]              mqtt.srec for flash/romulator
+[LOD]               C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/hex/mqtt/mqtt_flash.lod
+[LODCOMBINE]        Combine with Platform lod
+[LODCOMBINE]        Combine sucessful
+

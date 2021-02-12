@@ -1,0 +1,85 @@
+-- System Version : WINDOWS
+---------------------------------------------------
+
+
+[MAKE]  init
+
+[CC]   sdk_init.o                  <== sdk_init.c
+[AR]   libinit_debug.a
+ 
+
+
+[MAKE]  libs
+
+
+[MAKE]  libs/gps
+
+
+[MAKE]  libs/gps/minmea
+
+[CC]   minmea.o                    <== minmea.c
+[AR]   libminmea_debug.a
+ 
+
+[CC]   gps.o                       <== gps.c
+[CC]   gps_parse.o                 <== gps_parse.c
+[AR]   libgps_debug.a
+        |
+         -- libminmea_debug.a
+ 
+
+
+[MAKE]  libs/utils
+
+[CC]   assert.o                    <== assert.c
+[CC]   hal_gpio.o                  <== hal_gpio.c
+[CC]   buffer.o                    <== buffer.c
+[CC]   math.o                      <== math.c
+[CC]   log2f.o                     <== log2f.c
+[CC]   ntp.o                       <== ntp.c
+[CC]   stdlib.o                    <== stdlib.c
+[CC]   log2.o                      <== log2.c
+[CC]   time.o                      <== time.c
+[CC]   api_debug.o                 <== api_debug.c
+[AR]   libutils_debug.a
+ 
+
+
+[MAKE]  libs/cjson
+
+[CC]   cJSON.o                     <== cJSON.c
+[CC]   cJSON_Utils.o               <== cJSON_Utils.c
+[AR]   libcjson_debug.a
+ 
+
+[AR]   liblibs_debug.a
+        |
+         -- libgps_debug.a
+        |
+         -- libutils_debug.a
+        |
+         -- libcjson_debug.a
+ 
+
+
+[MAKE]  demo/gpio
+
+[CC]   demo_gpio.o                 <== demo_gpio.c
+[AR]   libgpio_debug.a
+ 
+
+
+-----------------------------------------------
+[LDGEN]             >>> cust.ld
+[LD] 1:C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio//gpio.elf 2:--oformat=elf32-littlemips 5:-just-symbols C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/platform/chip/rom/8955/lib/mem_bridge_rom_CHIP.elf 6: C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio/cust.ld 7:--gc-sections  -LC:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio/init/lib   -LC:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio/libs/lib   -LC:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio/demo/gpio/lib      --start-group   -linit_debug  -llibs_debug  -lgpio_debug --end-group -LC:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/platform/lib/gcc/mips-elf/4.4.2 -lgcc  --warn-common  --error-unresolved-symbols  8:C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/gpio//gpio.map  end1             gpio.elf
+[ElfCombine]        Elf binary & map file
+
+[GEN]               strip platform symbol
+                    |
+                     --C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/platform/compilation/platform_symbols_to_strip
+
+[SREC]              gpio.srec for flash/romulator
+[LOD]               C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/hex/gpio/gpio_flash.lod
+[LODCOMBINE]        Combine with Platform lod
+[LODCOMBINE]        Combine sucessful
+
