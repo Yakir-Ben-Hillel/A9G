@@ -7,58 +7,6 @@ Name             Origin             Length             Attributes
 Linker script and memory map
 
 
-.bootramtext    0xffffffff82000b00     0x1310 load address 0xffffffff8801b7e0
- hex/workshop/SW_V2130_csdk.elf(.bootramtext)
- .bootramtext   0xffffffff82000b00     0x1310 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff82000ce1                hal_SpiFlashGetID
-                0xffffffff82000cf9                hal_SpiFlashSetLockCallback
-                0xffffffff82000d05                hal_SpiFlashLock
-                0xffffffff82000d1d                hal_SpiFlashUnlock
-                0xffffffff82000d35                hal_SpiFlashSetUnlockCallback
-                0xffffffff82000d41                hal_SpiFlashSleep
-                0xffffffff82000d71                hal_SpiFlashMapUncacheAddress
-                0xffffffff82000d7d                hal_SpiFlashOffset
-                0xffffffff82000d89                hal_SpiFlashSetCheckIrq
-                0xffffffff82000d95                hal_SpiFlashGetPageSize
-                0xffffffff82000d9d                hal_SpiFlashGetSectorSize
-                0xffffffff82000da5                hal_SpiFlashGetBlockSize
-                0xffffffff82000db1                hal_SpiFlashGetSize
-                0xffffffff82000dc1                hal_SpiFlashWakeup
-                0xffffffff82000dfd                hal_SpiFlashReset
-                0xffffffff82000f3d                hal_SpiFlashReadStatusRegister
-                0xffffffff82001081                hal_SpiFlashReadStatusRegisterEx
-                0xffffffff8200110d                hal_SpiFlashWriteVolatileStatusRegisterEx
-                0xffffffff820011ed                hal_SpiFlashSecurityRead
-                0xffffffff820012b5                hal_SpiFlashChipErase
-                0xffffffff82001405                hal_SpiFlashErase
-                0xffffffff820014b5                hal_SpiFlashWrite
-                0xffffffff82001621                hal_SpiFlashSecurityWrite
-                0xffffffff8200167d                hal_SpiFlashSecurityErase
-                0xffffffff820016e1                hal_SpiFlashWriteStatusRegisterEx
-                0xffffffff8200175d                hal_SpiFlashWriteStatusRegister
-                0xffffffff820017d9                hal_SpiFlashClose
-                0xffffffff82001845                hal_SpiFlashOpen
-                0xffffffff82001929                memd_FlashGetSectorLimits
-                0xffffffff820019f5                memd_SetFramsIrqIgnore
-                0xffffffff820019f9                memd_SysIsIdle
-                0xffffffff820019fd                memd_FlashGetUserFieldInfo
-                0xffffffff82001a35                memd_FlashErase2SuspendTime
-                0xffffffff82001a39                memd_SuspendEnable
-                0xffffffff82001a45                memd_SuspendDisable
-                0xffffffff82001a51                memd_SuspendIsEnable
-                0xffffffff82001a65                memd_FlashRst
-                0xffffffff82001a75                memd_FlashGetGlobalAddress
-                0xffffffff82001a8d                memd_FlashRead
-                0xffffffff82001ad5                memd_FlashOpen
-                0xffffffff82001b25                memd_FlashWrite_Respond_Irq
-                0xffffffff82001b5d                memd_FlashWrite
-                0xffffffff82001b95                memd_FlashErase
-                0xffffffff82001c45                memd_FlashErase_Respond_Irq
-                0xffffffff82001cf5                memd_DdrGetTiming
-                0xffffffff82001d41                memd_AdjustRamClk
-                0xffffffff82001dd0                g_memdFlashBankLayout
-                0xffffffff82001dec                g_memdFlashLayout
-
 .ucdata         0xffffffffa20170f0      0x230 load address 0xffffffff88031dd0
  hex/workshop/SW_V2130_csdk.elf(.ucdata)
  .ucdata        0xffffffffa20170f0      0x230 hex/workshop/SW_V2130_csdk.elf
@@ -88,745 +36,6 @@ Linker script and memory map
                 0xffffffffa2017280                g_stdMapAccess
                 0xffffffffa2017290                g_sxMapAccess
                 0xffffffffa20172b0                g_voisCtx
-
-.bootsramtext   0xffffffff81c01b10      0x430 load address 0xffffffff880145c0
- hex/workshop/SW_V2130_csdk.elf(.bootsramtext)
- .bootsramtext  0xffffffff81c01b10      0x430 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff81c01b10                boot_SysSetupPLL
-                0xffffffff81c01b9c                boot_SysShutdownPLL
-                0xffffffff81c01be5                boot_SysGetChipId
-                0xffffffff81c01c29                hal_HstSendEvent
-                0xffffffff81c01c85                hal_SysSetSpiFlashClkToFast
-                0xffffffff81c01ca9                hal_SysWaitMicrosecond
-                0xffffffff81c01ce5                hal_TimDelay
-                0xffffffff81c01cfd                hal_TimGetUpTime
-                0xffffffff81c01d09                boot_EbcCsSetupWithCallback
-                0xffffffff81c01d51                hal_DisableUsbDp
-                0xffffffff81c01d65                hal_IspiRegWrite
-                0xffffffff81c01dc9                hal_IspiTxFinished
-                0xffffffff81c01dd9                hal_IspiTxFifoAvail
-                0xffffffff81c01de9                hal_IspiSendData
-                0xffffffff81c01e21                memd_FlashWakeup
-                0xffffffff81c01e31                memd_FlashSleep
-                0xffffffff81c01e41                memd_GetCfgDDRIndex
-
-.sys_sram_overlay_2
-                0xffffffff81c09690       0x10 load address 0xffffffff8801b7a0
- hex/workshop/SW_V2130_csdk.elf(.sys_sram_overlay_2)
- .sys_sram_overlay_2
-                0xffffffff81c09690       0x10 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff81c09690                pcmbuf_overlay
-
-.boot_sector_struct_ptr
-                0xffffffff81c00278        0x4
- hex/workshop/SW_V2130_csdk.elf(.boot_sector_struct_ptr)
- .boot_sector_struct_ptr
-                0xffffffff81c00278        0x4 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff81c00278                g_bootSectorStructPtr
-
-.cust_data      0xffffffff82300000       0x50 load address 0xffffffff88240e00
- hex/workshop/workshop.elf(.cust_data)
- .cust_data     0xffffffff82300000       0x50 hex/workshop/workshop.elf
-                0xffffffff82300000                __user_rw_start
-                0xffffffff82300000                willMsg
-                0xffffffff82300034                imei
-
-.sys_sram_overlay_3
-                0xffffffff81c09690       0x10 load address 0xffffffff8801b7b0
- hex/workshop/SW_V2130_csdk.elf(.sys_sram_overlay_3)
- .sys_sram_overlay_3
-                0xffffffff81c09690       0x10 hex/workshop/SW_V2130_csdk.elf
-
-.rom_entries_cached
-                0xffffffff81c00194       0x54
- hex/workshop/SW_V2130_csdk.elf(.rom_entries_cached)
- .rom_entries_cached
-                0xffffffff81c00194       0x54 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff81c00194                xcpu_error_code
-                0xffffffff81c00198                xcpu_error_status
-                0xffffffff81c0019c                xcpu_sp_context
-                0xffffffff81c001a0                sxr_IrqStack_pointer
-                0xffffffff81c001a4                g_bootResetCause
-                0xffffffff81c001a8                g_bootBootMode
-                0xffffffff81c001ac                g_bootUartMonitorBrDetected
-                0xffffffff81c001b0                g_bootUartMonitorBaudRate
-
-.sys_sram_overlay_4
-                0xffffffff81c09690       0x10 load address 0xffffffff8801b7c0
- hex/workshop/SW_V2130_csdk.elf(.sys_sram_overlay_4)
- .sys_sram_overlay_4
-                0xffffffff81c09690       0x10 hex/workshop/SW_V2130_csdk.elf
-
-.bcpu_rom_version_number
-                0xffffffff81e97ff8        0x4
- hex/workshop/SW_V2130_csdk.elf(.bcpu_rom_version_number)
- .bcpu_rom_version_number
-                0xffffffff81e97ff8        0x4 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff81e97ff8                g_bcpuRomVersionNumber
-                0xffffffff81e97ff8                _bcpu_rom_version_number
-
-.bbsram_globals
-                0xffffffff81986640      0x1b9
- hex/workshop/SW_V2130_csdk.elf(.bbsram_globals)
- .bbsram_globals
-                0xffffffff81986640      0x1b9 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff81986640                bcpu_error_code
-                0xffffffff81986640                _bb_sram_romed_globals_start
-                0xffffffff81986644                bcpu_error_status
-                0xffffffff81986648                bcpu_sp_context
-                0xffffffff8198664c                bcpu_stack_base
-                0xffffffff81986650                bcpu_main_entry
-                0xffffffff81986654                spal_GdbGData
-                0xffffffff8198665c                g_spalIrqRegistry
-                0xffffffff81986660                g_spalProfileControl
-                0xffffffff8198668c                g_spcAmrState
-                0xffffffff81986694                g_spcCtxAmrCfgTxChg
-                0xffffffff81986698                g_spcRxCountTcu
-                0xffffffff8198669c                g_spcSwTxFifo
-                0xffffffff81986788                g_sppGlobalParams
-                0xffffffff819867c0                g_sppA53CountInit
-                0xffffffff819867c4                g_sppCipherCipherA53Nb
-                0xffffffff819867c8                g_sppCipherDecipherA53Nb
-                0xffffffff819867f8                g_sppFullBurstReady
-                0xffffffff819867f9                _bb_sram_romed_globals_end
-
-.bss            0xffffffff8207aee0    0x33660
- hex/workshop/SW_V2130_csdk.elf(.bss)
- .bss           0xffffffff8207aee0    0x33660 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff8207aee0                g_halLpsSleptBefore
-                0xffffffff8207aee1                g_halSysLpsLock
-                0xffffffff8207aee4                g_halCalibration
-                0xffffffff8207af54                g_halSpeechMutedCount
-                0xffffffff8207af68                g_halSpeechFifo
-                0xffffffff8207b118                g_halModuleIfcChannelDebug
-                0xffffffff8207b218                g_halModuleIfcChannelDebugPos
-                0xffffffff8207b224                g_halTraceRxCtx
-                0xffffffff8207b28c                g_palCalibration
-                0xffffffff8207b290                g_palHandlers
-                0xffffffff8207b29c                g_Calib_OnSite
-                0xffffffff8207b29e                g_pmdMuteSpk
-                0xffffffff8207b344                g_pmdConfig
-                0xffffffff8207b352                g_usbCharging
-                0xffffffff8207b3d0                sxs_usrInitTaskId
-                0xffffffff8207b3d4                sxs_CmnTaskId
-                0xffffffff8207b3fc                pSimCtx
-                0xffffffff8207b400                sim_Data
-                0xffffffff8207b708                g_Semaphore
-                0xffffffff8207b70c                Usim_ADNAddress
-                0xffffffff8207b8cc                Usim_ADNPath
-                0xffffffff8207bb70                WaitSwTimer
-                0xffffffff8207bb74                g_sim_present
-                0xffffffff8207bb78                Dummy_AD_BinaryData
-                0xffffffff8207bb80                sm_Data
-                0xffffffff8207bc18                psm_Data
-                0xffffffff8207bc1c                sm_TabMobileOrgTI
-                0xffffffff8207bc5c                sm_TabNetworkOrgTI
-                0xffffffff8207bc9c                SMS_debug_buffer_index
-                0xffffffff8207bd60                gp_smsCurData
-                0xffffffff8207bd64                SMS_debug_buffer
-                0xffffffff8207bdb4                snd_Data
-                0xffffffff8207be8c                pSndCtx
-                0xffffffff8207beb8                gp_ssCurData
-                0xffffffff8207bec0                sxr_QueueDesc
-                0xffffffff8207d540                sxr_QueueEnv
-                0xffffffff8207e4e0                sxr_QueueFreeDesc
-                0xffffffff8207e4e2                sxr_QueueFreeEnv
-                0xffffffff8207e4e4                sxr_SemaInfo
-                0xffffffff8207e63c                g_sxsFsIdleHookFuncPtr
-                0xffffffff8207e640                g_sxsDebugIdleHookElem
-                0xffffffff8207e668                g_sxRaiseTime
-                0xffffffff8207e670                sxs_IoCtx
-                0xffffffff8207e6b4                sxr_Job
-                0xffffffff8207e6b8                sxr_Heap
-                0xffffffff8207e7d0                sxr_Cluster
-                0xffffffff8207e8b0                sxr_NbCluster
-                0xffffffff8207e8b4                sxr_MemoryAlert
-                0xffffffff8207e8bc                sxr_MemTracker
-                0xffffffff8207eec4                sxr_Mutex
-                0xffffffff8207eef8                sxr_Sbx
-                0xffffffff82082470                sxs_Spy
-                0xffffffff82082578                sxr_TCtx
-                0xffffffff820825a0                sxr_TEnv
-                0xffffffff82083544                sxr_Task
-                0xffffffff82083af0                g_uat_stran_callbck
-                0xffffffff82083b34                gpf_uflash_write_block
-                0xffffffff82083b38                gpf_uflash_read_block
-                0xffffffff82083b50                g_umss_flash_handler
-                0xffffffff82083c18                g_vppMicNoiseSuppressRAMX
-                0xffffffff82085b58                g_vppReceiverNoiseSuppressRAMX
-                0xffffffff82087a98                g_vppAecRAMX
-                0xffffffff820895c8                g_vppMicAgcRAMX
-                0xffffffff820899b0                g_vppReceiverAgcRAMX
-                0xffffffff82089d98                g_vppSpeechCode
-                0xffffffff8208c318                g_vppSpeechRAMX
-                0xffffffff8208f1f8                g_api_rr_task_started
-                0xffffffff8208f200                apiData
-                0xffffffff8208f258                pAPIData
-                0xffffffff8208f25c                watchdogDoNotFeedInIdle
-                0xffffffff8208f260                g_audCodecGalliteAifCfg
-                0xffffffff8208f274                g_audSetHeadMaxDigitalGain
-                0xffffffff8208f275                g_audSetMicMaxGain
-                0xffffffff8208f298                g_BalFlashInitProgramDone
-                0xffffffff8208f29c                g_BalTasks
-                0xffffffff8208f2ac                g_PreKeyCode
-                0xffffffff8208f358                g_calibUsedOpInfo
-                0xffffffff8208f360                g_calibUsedXcv
-                0xffffffff8208f408                g_calibUsedPa
-                0xffffffff82090634                g_calibUsedBb
-                0xffffffff82090fc0                g_calibUsedIIR
-                0xffffffff820910b0                g_calibUsed_audio_voc
-                0xffffffff82092710                g_calibUsed_audio_music
-                0xffffffff82092f28                gp_cb_Data
-                0xffffffff82092f8c                gp_ccCurData
-                0xffffffff82093104                g_CfwNVInfo
-                0xffffffff82093108                g_CfwNv
-                0xffffffff82093aa4                nQueueid
-                0xffffffff82093aa8                g_CosBaseAdd
-                0xffffffff82093aac                g_CswBaseAdd
-                0xffffffff82093ab0                g_CosHeapSize
-                0xffffffff82093ab4                g_CswHeapSize
-                0xffffffff82093ab8                g_CswMallocNum
-                0xffffffff82093abc                g_CosMallocNum
-                0xffffffff82093ac8                g_hCosMmiTask
-                0xffffffff82093acc                g_hCosATTask
-                0xffffffff82093ad0                Playstate
-                0xffffffff82093ad4                PlayLenTemp
-                0xffffffff82093ad8                BzPlayState
-                0xffffffff82093adc                g_VIBRATING_state
-                0xffffffff82093ae0                g_FLASH_state
-                0xffffffff82093ae4                gmycallback
-                0xffffffff82093ae8                PlayLen
-                0xffffffff82093aec                BzDuration
-                0xffffffff82093af0                BzBuffer
-                0xffffffff82093af4                g_KeyBoard_Init_Status
-                0xffffffff82093af5                Play_music
-                0xffffffff82093af6                audioBusy
-                0xffffffff82093af8                g_playToneAudioTempTime
-                0xffffffff82093afc                isSPKMute
-                0xffffffff82093b00                term_num
-                0xffffffff82093b04                audioItf
-                0xffffffff82093b08                audioItfBackup
-                0xffffffff82093b0c                g_audioRecBufStart
-                0xffffffff82093b10                g_audioRecBufLen
-                0xffffffff82093b14                g_audioRecBufOffset
-                0xffffffff82093b18                gSpeakerOpen_stasus
-                0xffffffff82093b19                gMicOpen_stasus
-                0xffffffff82093b1a                Speeching
-                0xffffffff82093b1c                DTMF_duration
-                0xffffffff82093b1e                short_time_keytone
-                0xffffffff82093b38                g_spk_gain
-                0xffffffff82093b3c                cii_currentDTMF
-                0xffffffff82093b48                g_powerdown_cause
-                0xffffffff82093b4c                g_gpioDirection
-                0xffffffff82093c4c                g_padac_state
-                0xffffffff82093d74                g_xcvRfIniting
-                0xffffffff82093d75                gbw
-                0xffffffff82093d76                xtal_state
-                0xffffffff82093d78                g_rfdXcvRegForceWriteError
-                0xffffffff82093d7c                g_rfdXcvRegForceReadError
-                0xffffffff82093d90                g_pDevDescrip
-                0xffffffff82093d94                g_iDevDescripCount
-                0xffffffff82093d98                g_pDsmDevInfo
-                0xffffffff82093d9c                g_iDsmDevCount
-                0xffffffff82093da0                g_hDevSem
-                0xffffffff82093da4                dtmf_frame_count
-                0xffffffff82094cc0                DecoderBuffer
-                0xffffffff82095680                g_fs_current
-                0xffffffff82095914                g_fs_super_block_table
-                0xffffffff82095918                g_fs_file_list
-                0xffffffff8209591c                g_pFsDevInfo
-                0xffffffff82095920                g_tstFsLocalErrCode
-                0xffffffff8209592d                g_GpdacBusy
-                0xffffffff8209595c                g_clk_sw
-                0xffffffff82095968                g_halCfg
-                0xffffffff8209596c                g_halDbgPalTrc
-                0xffffffff82096074                g_halDmaUserId
-                0xffffffff82096078                g_halDmaMode
-                0xffffffff8209607c                g_halDmaRegistry
-                0xffffffff82096348                l1_Sapi0FacchQueue
-                0xffffffff82096349                l1_Sapi3Queue
-                0xffffffff8209634c                l1_Sapi0SacchPtr
-                0xffffffff82096350                l1_PCtrlQueue
-                0xffffffff82096351                l1_PDataQueue
-                0xffffffff82096354                l1_PacketMeasurementReportPtr
-                0xffffffff82096358                l1_Ctx
-                0xffffffff82096dcc                SlicedCell
-                0xffffffff82096dd0                SpeedupNearList
-                0xffffffff82096dd2                DlPollingRsp
-                0xffffffff82096dd4                g_NBurstRxWin
-                0xffffffff82096de4                lap_Data
-                0xffffffff82096f14                pLapCtx
-                0xffffffff82096f18                lap_SapiIdx
-                0xffffffff8209730c                llc_Data
-                0xffffffff820973ac                pLLCCtx
-                0xffffffff82097418                g_flash_cache
-                0xffffffff82099434                g_Flag
-                0xffffffff82099438                g_Character
-                0xffffffff82099460                mmCtx
-                0xffffffff82099650                pMMCtx
-                0xffffffff82099654                mmDulCtx
-                0xffffffff82099659                g_fcch_detect_mode
-                0xffffffff8209965c                g_palDC
-                0xffffffff820996e4                g_palFrame
-                0xffffffff820997ec                FcchWin
-                0xffffffff82099834                g_SimIndex
-                0xffffffff82099838                g_palEtuParaF
-                0xffffffff82099840                g_palEtuParaD
-                0xffffffff82099844                g_palSimClkStopMode
-                0xffffffff820998ec                rld_Data
-                0xffffffff82099954                pRLDCtx
-                0xffffffff82099958                rlu_Data
-                0xffffffff82099a78                pRLUCtx
-                0xffffffff82099a7c                rr_Data
-                0xffffffff8209c114                pRRCtx
-                0xffffffff8209c118                psap_StackCfg
-                0xffffffff8209c11c                ZhiBoXing
-                0xffffffff8209c11d                UsfGran
-                0xffffffff8209c120                sap_StackCfg
-                0xffffffff8209c1d0                sap_StackDynCfg
-                0xffffffff8209c1d4                g_sms_dm_nv
-                0xffffffff820a0a80                g_SMS_DM_InitFlag
-                0xffffffff820a0a84                g_SMS_DM_Sem
-                0xffffffff820a0a8c                sxr_UsrCluster
-                0xffffffff820a0c0c                sxr_NbUsrCluster
-                0xffffffff820a0c10                g_timer_list
-                0xffffffff820a0c14                errno
-                0xffffffff820a0c20                gCSWPowerOnTime
-                0xffffffff820a0c24                G_TM_Parameters
-                0xffffffff820a0c30                TIM_Glo_Infor_Buf
-                0xffffffff820a0eec                TIM_LastErrorCode
-                0xffffffff820a0ff4                g_UctlsStatus
-                0xffffffff820a1004                g_cachenode
-                0xffffffff820a1224                g_tst_erase_suspend_count
-                0xffffffff820a1228                g_pGcBuff
-                0xffffffff820a2228                g_VDS_partition_table
-                0xffffffff820a24f8                g_vds_partition_count
-                0xffffffff820a24fc                g_psSectRef
-                0xffffffff820a2500                g_psRemainRef
-                0xffffffff820a2504                g_sFlashInfo
-                0xffffffff820a2514                g_tstVdsErrCode
-                0xffffffff820a2518                g_iFlushAllowed
-                0xffffffff820a251c                g_iVdsCacheHasInited
-                0xffffffff820a259c                g_msdfReload
-                0xffffffff820a25a0                g_MIXVOICE_TYPE
-                0xffffffff820a25a4                g_MIXVOICE_Handler
-                0xffffffff820a25a8                g_AGCEnbleFlag
-                0xffffffff820a25ac                g_SpkLevel
-                0xffffffff820a25b0                g_AudInterface
-                0xffffffff820a25b4                g_VoCRunFlag
-                0xffffffff820a2670                g_RxBuf
-                0xffffffff820a28f0                g_TxBuf
-                0xffffffff820a2b70                g_curSeqPos
-                0xffffffff820a2b74                sinvalue_1
-                0xffffffff820a2b7c                sinvalue_2
-                0xffffffff820a2b84                g_DtmfGenState
-                0xffffffff820a2b88                g_DtmfgenHandler
-                0xffffffff820a2b8c                sinparam_1
-                0xffffffff820a2b94                sinparam_2
-                0xffffffff820a2c04                api_MsNwkCap
-                0xffffffff820a2c18                api_MsRACap
-                0xffffffff820a2c80                api_LenMsRACap
-                0xffffffff820a2c84                g_htstVdsTask
-                0xffffffff820a2c88                handleApiTask
-                0xffffffff820a2c8c                handleMainTask
-                0xffffffff820a2c90                isCfwInitComplete
-                0xffffffff820a2c94                apiPlatformInitStatus
-                0xffffffff820a2c98                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                0xffffffff820a2c9c                isCfwInitCompleteBefore
-                0xffffffff820a2cac                semDeleteMessage
-                0xffffffff820a2cb0                isDeleteSuccess
-                0xffffffff820a2db4                socketIsUdpOrTcp
-                0xffffffff820a2dc8                socketDestPort
-                0xffffffff820a2e18                socketDestIp
-                0xffffffff820a2ff0                g_arsPcmBuf
-                0xffffffff820a3298                g_trace_Data
-                0xffffffff820a329c                g_tracefileHandle
-                0xffffffff820a32a4                g_calibStubLocalCtx
-                0xffffffff820a3834                CSN1Action_cc_852952723_Actions
-                0xffffffff820a3838                g_aom_sem
-                0xffffffff820a383c                CFW_Sys_Default_Proc
-                0xffffffff820a3884                AO_GoOnStatus
-                0xffffffff820a388c                AO_ControlBlock
-                0xffffffff820a3f08                SIMOCStatus
-                0xffffffff820a3f10                g_CFWStartStopStackFlag
-                0xffffffff820a3f20                IndEventInfo
-                0xffffffff820a3f28                gprs_sum
-                0xffffffff820a3f38                g_SmsFormat_Sim0
-                0xffffffff820a3f39                g_SmsFormat_Sim1
-                0xffffffff820a3f3a                g_SmsFormat_Sim2
-                0xffffffff820a3f3b                g_SmsFormat_Sim3
-                0xffffffff820a3f3c                g_SmsShowTextMode_Sim0
-                0xffffffff820a3f3d                g_SmsShowTextMode_Sim1
-                0xffffffff820a3f3e                g_SmsShowTextMode_Sim2
-                0xffffffff820a3f3f                g_SmsShowTextMode_Sim3
-                0xffffffff820a3f80                PdpContList
-                0xffffffff820a3fb8                DnsServerIP
-                0xffffffff820a4028                store_packet_head
-                0xffffffff820a402c                store_packet_end
-                0xffffffff820a4030                store_packet_cnt
-                0xffffffff820a4034                start_gprsDetach_timer
-                0xffffffff820a4078                gprs_flow_ctrl
-                0xffffffff820a4088                pQosList
-                0xffffffff820a40f8                CurAppCng
-                0xffffffff820a4108                GprsCidSavedInApp
-                0xffffffff820a410c                IPAddress
-                0xffffffff820a4110                gCOMMMode
-                0xffffffff820a4118                gbLockBCCH
-                0xffffffff820a4124                gCSDelayInfo
-                0xffffffff820a414c                g_NW_IND
-                0xffffffff820a4150                g_IMSI_INIT
-                0xffffffff820a4154                g_CFW_PowerOn
-                0xffffffff820a4158                g_SAT_IND
-                0xffffffff820a415c                g_SAT_INIT_COMPLETE
-                0xffffffff820a4160                g_TestMode_AutoResponse
-                0xffffffff820a4168                g_TestMode_AutoEMCDial
-                0xffffffff820a4170                g_TestMode_AutoEMCDialNum
-                0xffffffff820a4178                g_SMSPInfo
-                0xffffffff820a41ac                g_SimInit1Status
-                0xffffffff820a41b4                g_SimInit2Status
-                0xffffffff820a41bc                g_SimInit3Status
-                0xffffffff820a41c4                g_SimInit3Status_p2
-                0xffffffff820a41cc                bSatSimInit
-                0xffffffff820a41ec                gSimStage3Finish
-                0xffffffff820a41f0                g_cfw_sim_status
-                0xffffffff820a41f4                g_cfw_sim_adn_status
-                0xffffffff820a41f8                gSPNInfo
-                0xffffffff820a4220                nICCID
-                0xffffffff820a4234                gTestSim
-                0xffffffff820a423c                ADNInfo
-                0xffffffff820a424c                gUsimAid
-                0xffffffff820a4270                gUsimLabel
-                0xffffffff820a42b8                gUsimEfStatus
-                0xffffffff820a42c8                gUsimPin
-                0xffffffff820a4408                DIR_RECORD_NUM
-                0xffffffff820a440c                DIR_CURRENT_NUM
-                0xffffffff820a4410                Sim_Lp
-                0xffffffff820a4418                gSimDropInd
-                0xffffffff820a441c                nECC_Code
-                0xffffffff820a442c                nUsimECC_Code
-                0xffffffff820a4440                g_GETIMSI
-                0xffffffff820a4444                nCommondNum
-                0xffffffff820a44cc                gSatFreshComm
-                0xffffffff820a44d0                gSATTimerValue
-                0xffffffff820a4518                cbCtx
-                0xffffffff820a45ec                gCbReadFile
-                0xffffffff820a4600                gpLongerMsgPara
-                0xffffffff820a4604                gpLongerMsgParaIndex
-                0xffffffff820a4608                gPendingNewSms
-                0xffffffff820a460c                gNewSMSInd
-                0xffffffff820a4614                g_SMSConcat
-                0xffffffff820a46cc                g_consumers
-                0xffffffff820a47cc                DataCSN1Context
-                0xffffffff820a68cc                g_sd_sleepIn
-                0xffffffff820a72f8                g_FatCache
-                0xffffffff820a72fc                g_FatCahcheNum
-                0xffffffff820a7300                g_TstFsErrCode
-                0xffffffff820a7304                gAifClk
-                0xffffffff820a7324                ip_data
-                0xffffffff820a73c4                l1_SavedPsDataReqMsg
-                0xffffffff820a7410                audio_mode
-                0xffffffff820a7418                CSN1Action_mm_852952723_Actions
-                0xffffffff820a741c                gnMmcMode
-                0xffffffff820a7420                gAudio
-                0xffffffff820a743c                gRecord
-                0xffffffff820a7454                ev
-                0xffffffff820a7464                ev_play
-                0xffffffff820a7474                g_AMRConsumedLength
-                0xffffffff820a7478                g_AMRFILESIZE
-                0xffffffff820a7490                amr_pcmbuf_overlay
-                0xffffffff820a8890                AmrPlayer
-                0xffffffff820a88d8                g_ConsumedLength
-                0xffffffff820a88dc                g_AudioMode
-                0xffffffff820a88e0                g_AudioSeekFlag
-                0xffffffff820a88e4                g_MPEGFILESIZE
-                0xffffffff820a88e8                G_VppSBCConstY
-                0xffffffff820a8908                MpegPlayer
-                0xffffffff820a89a0                g_WAVConsumedLength
-                0xffffffff820a89a4                data_size
-                0xffffffff820a89a8                G_WavSBCConstY
-                0xffffffff820a89fc                WavPlayer
-                0xffffffff820a8aa8                a2dp_sbc_strm
-                0xffffffff820a8ab4                g_calibEquRdyFlag
-                0xffffffff820a8ab5                FINT_counter
-                0xffffffff820a8b88                neighbor_cache
-                0xffffffff820a8d40                destination_cache
-                0xffffffff820a8f20                prefix_list
-                0xffffffff820a8fac                default_router_list
-                0xffffffff820a910c                h_errno
-                0xffffffff820a9114                netif_list
-                0xffffffff820a9118                netif_default
-                0xffffffff820a911c                isPppActived
-                0xffffffff820a9120                g_ppp_ctx
-                0xffffffff820a9140                pbuf_free_ooseq_pending
-                0xffffffff820a9150                IsPUlAss
-                0xffffffff820a9154                ED_RR_P
-                0xffffffff820a9174                ED_RR_Q
-                0xffffffff820a9194                CSN1Action_rrd_852952723_Actions
-                0xffffffff820a9220                g_MallocedCount
-                0xffffffff820a9224                g_Malloced_p
-                0xffffffff820a99f8                tcp_ticks
-                0xffffffff820a99fc                tcp_active_pcbs_changed
-                0xffffffff820a9a00                tcp_bound_pcbs
-                0xffffffff820a9a04                tcp_listen_pcbs
-                0xffffffff820a9a08                tcp_active_pcbs
-                0xffffffff820a9a0c                tcp_tw_pcbs
-                0xffffffff820a9a48                tcp_input_pcb
-                0xffffffff820a9a4c                udp_pcbs
-                0xffffffff820a9a50                G_Mp3DRCHistoryBuf
-                0xffffffff820aad70                vpp_AudioJpegDecVocOpen_status
-                0xffffffff820aad78                sndRecBuffer
-                0xffffffff820aad7c                sndRecRingBuffer
-                0xffffffff820aad80                sndRecBufferLength
-                0xffffffff820aad84                rec_audioItf
-                0xffffffff820ab05c                pNetworkCallback
-                0xffffffff820ab060                pdpContextId
-                0xffffffff820ab12c                g_location
-                0xffffffff820ab19c                isAutoUpdateRtcTime
-                0xffffffff820ab310                g_hAsynFsTask
-                0xffffffff820ab358                irqParamArray
-                0xffffffff820ab3e4                spi1IrqHandler
-                0xffffffff820ab3e8                spi2IrqHandler
-                0xffffffff820ab43c                uart1_rxbuf
-                0xffffffff820ab83c                uart2_rxbuf
-                0xffffffff820abc3c                connectionCallbackParam
-                0xffffffff820abce8                DL_process_handler
-                0xffffffff820abcfc                signgam
-                0xffffffff820ae2b4                certProfile
-                0xffffffff820ae2f8                ca_pem
-                0xffffffff820ae2fc                cert_pem
-                0xffffffff820ae300                key_pem
-                0xffffffff820ae53c                _log
-
-.internal_rom   0xffffffff81e00000     0x51f0
- hex/workshop/SW_V2130_csdk.elf(.internal_rom)
- .internal_rom  0xffffffff81e00000     0x51f0 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff81e00000                __xcpu_start
-                0xffffffff81e00180                _boot_IrqHandler
-                0xffffffff81e002d0                boot_HstMonitorX
-                0xffffffff81e00330                boot_DbgExlTrigFunction0
-                0xffffffff81e00358                monitor_entry
-                0xffffffff81e0035c                initial_stack_top_var
-                0xffffffff81e00360                boot_InvalidCache
-                0xffffffff81e00378                boot_InvalidICache
-                0xffffffff81e00398                boot_InvalidDCache
-                0xffffffff81e003b8                boot_DisableInterrupt
-                0xffffffff81e00401                boot_MonitorDoMonitoring
-                0xffffffff81e00551                boot_Monitor
-                0xffffffff81e00589                boot_UartMonitorGetBaudRate
-                0xffffffff81e0059d                boot_UartMonitorSend
-                0xffffffff81e00601                boot_UartMonitorGet
-                0xffffffff81e00665                boot_UartMonitorOpen
-                0xffffffff81e006cd                boot_UartMonitorClose
-                0xffffffff81e006dd                boot_UartMonitorAck
-                0xffffffff81e00769                boot_UartMonitorTimeOut
-                0xffffffff81e00791                boot_UartMonitorWriteProcess
-                0xffffffff81e008d9                boot_UartMonitorRpcProcess
-                0xffffffff81e00a21                boot_UartMonitorReadProcess
-                0xffffffff81e00be1                boot_UartMonitorExitProcess
-                0xffffffff81e00c35                boot_UartMonitorProcess
-                0xffffffff81e00cdd                boot_UartMonitor
-                0xffffffff81e00ffc                g_BootHostUsbFixPtr
-                0xffffffff81e01000                boot_FlushDCache
-                0xffffffff81e01440                boot_IrqDispatch
-                0xffffffff81e01484                boot_DcacheFlushAddrRange
-                0xffffffff81e015f1                mon_Event
-                0xffffffff81e01629                boot_HstCmdBasicHandler
-                0xffffffff81e01699                boot_HstMonitor
-                0xffffffff81e01705                boot_IspiGetRomedCfg
-                0xffffffff81e01791                boot_IspiOpen
-                0xffffffff81e01871                boot_IspiFlushFifos
-                0xffffffff81e01881                boot_IspiClearRxDmaDone
-                0xffffffff81e01891                boot_IspiClearTxDmaDone
-                0xffffffff81e018a1                boot_IspiClose
-                0xffffffff81e018e5                boot_IspiRxIfcChannelRelease
-                0xffffffff81e018fd                boot_IspiTxIfcChannelRelease
-                0xffffffff81e01915                boot_IspiSendData
-                0xffffffff81e01971                boot_IspiSendDataBuffer
-                0xffffffff81e019dd                boot_IspiTxFifoAvail
-                0xffffffff81e019f9                boot_IspiTxDmaDone
-                0xffffffff81e01a29                boot_IspiTxFinished
-                0xffffffff81e01a55                boot_IspiGetData
-                0xffffffff81e01a85                boot_IspiGetDataBuffer
-                0xffffffff81e01af1                boot_IspiRxFifoLevel
-                0xffffffff81e01b09                boot_IspiRxDmaDone
-                0xffffffff81e01b39                boot_IspiForcePin
-                0xffffffff81e01bcd                boot_IspiGetRxIfcTc
-                0xffffffff81e01be4                g_bootIspiRomedCfg
-                0xffffffff81e01c49                boot_UsbResetTransfert
-                0xffffffff81e01c71                boot_UsbStartTransfert
-                0xffffffff81e01d79                boot_UsbCancelTransfert
-                0xffffffff81e01da1                boot_UsbContinueTransfert
-                0xffffffff81e02311                boot_UsbInitVar
-                0xffffffff81e02339                boot_UsbOpen
-                0xffffffff81e02359                boot_UsbEpStall
-                0xffffffff81e023e1                boot_UsbRecv
-                0xffffffff81e02429                boot_UsbSend
-                0xffffffff81e024a1                boot_UsbCompletedCommand
-                0xffffffff81e024dd                boot_UsbEpEnableInterrupt
-                0xffffffff81e0252d                boot_UsbEpRxTransferedSize
-                0xffffffff81e02549                boot_UsbEpTransfertDone
-                0xffffffff81e025f9                boot_UsbClose
-                0xffffffff81e02635                boot_UsbReset
-                0xffffffff81e02d9d                boot_UsbIrqHandler
-                0xffffffff81e02fd1                boot_HostUsbDeviceCallback
-                0xffffffff81e02fdd                boot_HostUsbUartDeviceCallback
-                0xffffffff81e02fe9                boot_HostUsbClockEnable
-                0xffffffff81e03021                boot_HostUsbClose
-                0xffffffff81e03031                boot_HostUsbSend
-                0xffffffff81e03169                boot_HostUsbEvent
-                0xffffffff81e03621                boot_HostUsbRecv
-                0xffffffff81e036b9                boot_HostUsbInit
-                0xffffffff81e03719                boot_HostUsbOpen
-                0xffffffff81e03788                boot_HostUsbInterface
-                0xffffffff81e0385c                boot_romCsString
-                0xffffffff81e03890                boot_romDT
-                0xffffffff81e038a0                MutedFrame_AMR
-                0xffffffff81e038a8                MutedFrame_HR
-                0xffffffff81e038b8                MutedFrame_EFR
-                0xffffffff81e038d8                MutedFrame_FR
-                0xffffffff81e03901                atoi
-                0xffffffff81e03941                bsearch
-                0xffffffff81e039a0                _ctype
-                0xffffffff81e03aa1                memchr
-                0xffffffff81e03ae1                memcmp
-                0xffffffff81e03b10                memcpy
-                0xffffffff81e03e10                memcpyb
-                0xffffffff81e03e41                memmove
-                0xffffffff81e03f81                memscan
-                0xffffffff81e03fa0                memset
-                0xffffffff81e04341                qsort
-                0xffffffff81e04371                strcat
-                0xffffffff81e04391                strchr
-                0xffffffff81e043c1                strrchr
-                0xffffffff81e043e1                strcmp
-                0xffffffff81e04421                strcpy
-                0xffffffff81e04441                strcspn
-                0xffffffff81e04481                strlen
-                0xffffffff81e044a1                strnlen
-                0xffffffff81e044c1                strncat
-                0xffffffff81e04511                strncmp
-                0xffffffff81e04551                strncpy
-                0xffffffff81e04591                strnicmp
-                0xffffffff81e04611                strsep
-                0xffffffff81e04651                strspn
-                0xffffffff81e04681                strstr
-                0xffffffff81e046e1                strtok_r
-                0xffffffff81e04761                strtok
-                0xffffffff81e04781                strtol
-                0xffffffff81e04941                strtoul
-
-.bcpu_rotext    0xffffffff88011100      0x510
- hex/workshop/SW_V2130_csdk.elf(.bcpu_rotext)
- .bcpu_rotext   0xffffffff88011100      0x510 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff88011101                bcpu_main
-                0xffffffff880114d1                patch_Open
-                0xffffffff88011535                patch_GetLocation
-                0xffffffff8801155d                patch_Enable
-                0xffffffff88011581                patch_ReplaceFunction
-
-.bcpu_rom_rodata
-                0xffffffff81e937b0     0x46f0
- hex/workshop/SW_V2130_csdk.elf(.bcpu_rom_rodata)
- .bcpu_rom_rodata
-                0xffffffff81e937b0     0x46f0 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff81e937b0                bcpu_romCsString
-                0xffffffff81e937dc                bcpu_romDT
-                0xffffffff81e9381c                g_sppCsCrcParam
-                0xffffffff81e9398c                g_sppCsConvParam
-                0xffffffff81e93afc                g_sppCsSrcParam
-                0xffffffff81e93b8c                g_sppVitacDecParam
-                0xffffffff81e93c44                g_sppVitacPolyres
-                0xffffffff81e93c64                g_sppInputLengthBitAfs
-                0xffffffff81e93c6c                g_sppAfsReorderTables
-                0xffffffff81e93c8c                g_sppInputLengthBitAhs
-                0xffffffff81e93c94                g_sppAhsReorderTables
-                0xffffffff81e93cac                g_sppMatrixHr
-                0xffffffff81e93d8c                g_sppMatrixFrInv
-                0xffffffff81e93f94                g_sppMatrixEfr1
-                0xffffffff81e93fd8                g_sppMatrixEfr1Inv
-                0xffffffff81e9401c                g_sppMatrixEfr2Inv
-                0xffffffff81e94214                g_sppNbFwequStartSt
-                0xffffffff81e94234                g_sppNbBwequStartSt
-                0xffffffff81e94254                g_sppGsmTscSch
-                0xffffffff81e9425c                g_sppGsmTscAburst
-                0xffffffff81e94264                g_sppGsmTscAburst_1
-                0xffffffff81e9426c                g_sppGsmTscAburst_2
-                0xffffffff81e94274                g_sppGsmTscNburst
-                0xffffffff81e942f4                g_sppSaicTable
-                0xffffffff81e9433c                g_sppSaicPMatrixTable
-                0xffffffff81e94354                g_sppUsfCs2Cs3
-                0xffffffff81e9435c                g_spp_UsfCs4
-                0xffffffff81e9436c                g_sppIcSidRatscch
-                0xffffffff81e94374                g_sppIcAfsSpeech
-                0xffffffff81e9437c                g_sppIcAhsSpeech
-                0xffffffff81e94384                g_sppImAfsSid
-                0xffffffff81e943a0                g_sppImAhsSid
-                0xffffffff81e943c0                g_sppImRatscch
-                0xffffffff81e943e0                g_sppAfsSidMarker
-                0xffffffff81e943fc                g_sppAhsSidMarker
-                0xffffffff81e94418                g_sppRatscchMarker
-                0xffffffff81e94434                g_sppConvOutLengthBitAhs
-                0xffffffff81e9443c                g_sppConvOutMaskAhs
-                0xffffffff81e94454                g_spp_8TapChestTab
-                0xffffffff81e94dd4                g_sppChestTab
-                0xffffffff81e96a30                g_sppCsPuncturingTable
-                0xffffffff81e97684                g_sppPCH_vector_a
-                0xffffffff81e977dc                g_sppPCH_vector_b1
-                0xffffffff81e97830                g_sppPCH_vector_b2
-                0xffffffff81e97884                g_sppPCH_vector_b3
-                0xffffffff81e978d8                g_sppPCH_vector_b4
-                0xffffffff81e9792c                g_sppPCH_b_pos
-                0xffffffff81e97980                g_sppPCH_size_vector_b
-                0xffffffff81e979bc                g_sppMapVersion
-                0xffffffff81e97a10                g_spalMapAccess
-                0xffffffff81e97a14                g_spalMapVersion
-                0xffffffff81e97a5c                LUT_8PSK
-                0xffffffff81e97a7c                PSK8_ROTATE
-                0xffffffff81e97abc                GMSK_ROTATE
-                0xffffffff81e97afc                spal_GdbGBreak
-                0xffffffff81e97ba4                AFSfilterCI
-                0xffffffff81e97c70                AHSfilterCI
-                0xffffffff81e97d34                spcSizeFromMCS
-                0xffffffff81e97d84                g_spcMapVersion
-
-.boot_sector_reload_struct_ptr
-                0xffffffff81c00274        0x4
- hex/workshop/SW_V2130_csdk.elf(.boot_sector_reload_struct_ptr)
- .boot_sector_reload_struct_ptr
-                0xffffffff81c00274        0x4 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff81c00274                g_bootSectorReloadStructPtr
-
-.bbsram_patch_data
-                0xffffffff81987870       0x30 load address 0xffffffff88012690
- hex/workshop/SW_V2130_csdk.elf(.bbsram_patch_data)
- .bbsram_patch_data
-                0xffffffff81987870       0x30 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff81987870                Copy_ChModeSaic
-                0xffffffff81987870                _bb_sram_patch_data_start
-                0xffffffff81987874                Rx_q_CCHSaic
-                0xffffffff81987894                Rx_CS_Saic
-                0xffffffff81987898                decodedUsfSaic
-                0xffffffff8198789c                gUsfDistance
-                0xffffffff8198789e                gDistance_max
-                0xffffffff819878a0                _bb_sram_patch_data_end
-
-.bcpu_bss       0xffffffff82000a00       0x10
- hex/workshop/SW_V2130_csdk.elf(.bcpu_bss)
- .bcpu_bss      0xffffffff82000a00       0x10 hex/workshop/SW_V2130_csdk.elf
-
-.bootsrambss    0xffffffff81c08cd0       0x10
- hex/workshop/SW_V2130_csdk.elf(.bootsrambss)
- .bootsrambss   0xffffffff81c08cd0       0x10 hex/workshop/SW_V2130_csdk.elf
-
-.bootbss        0xffffffff82056d90       0x10
- hex/workshop/SW_V2130_csdk.elf(.bootbss)
- .bootbss       0xffffffff82056d90       0x10 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff82056d90                g_memdFlashBaseAddress
-
-.fixptr         0xffffffff81c0027c        0x4
- hex/workshop/SW_V2130_csdk.elf(.fixptr)
- .fixptr        0xffffffff81c0027c        0x4 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff81c0027c                g_halFixedPointer
 
 .data           0xffffffff82017320    0x3f9c0 load address 0xffffffff88032000
  hex/workshop/SW_V2130_csdk.elf(.data)
@@ -1795,6 +1004,91 @@ Linker script and memory map
                 0xffffffff82056c54                mbedtls_free
                 0xffffffff8205ecc0                _gp
 
+.bcpu_sramucdata
+                0xffffffffa1c01ad0       0x40 load address 0xffffffff88013e30
+ hex/workshop/SW_V2130_csdk.elf(.bcpu_sramucdata)
+ .bcpu_sramucdata
+                0xffffffffa1c01ad0       0x40 hex/workshop/SW_V2130_csdk.elf
+                0xffffffffa1c01ad0                g_mailbox_pal2spc_RxBufInd
+                0xffffffffa1c01ad0                _bcpu_sys_sram_uncached_start
+                0xffffffffa1c01ad2                UsfDistanceNormal
+                0xffffffffa1c01ad4                DistanceMaxNormal
+                0xffffffffa1c01ad6                UsfDistanceSaic
+                0xffffffffa1c01ad8                DistanceMaxSaic
+                0xffffffffa1c01adc                g_mailbox_pal2spc_rxBandInd
+                0xffffffffa2000a00                _bcpu_ram_uncached_start
+                0xffffffff81c01ad0                _bcpu_sys_sram_cached_start
+                0xffffffff82000a00                _bcpu_ram_txt_start
+                0xffffffff82000a00                _bcpu_ram_cached_start
+
+.sys_sram_overlay_3
+                0xffffffff81c09690       0x10 load address 0xffffffff8801b7b0
+ hex/workshop/SW_V2130_csdk.elf(.sys_sram_overlay_3)
+ .sys_sram_overlay_3
+                0xffffffff81c09690       0x10 hex/workshop/SW_V2130_csdk.elf
+
+.rom_entries_uncached
+                0xffffffffa1c000a0       0xf4
+ hex/workshop/SW_V2130_csdk.elf(.rom_entries_uncached)
+ .rom_entries_uncached
+                0xffffffffa1c000a0       0xf4 hex/workshop/SW_V2130_csdk.elf
+                0xffffffffa1c000a0                boot_HstMonitorXCtx
+                0xffffffffa1c000a0                _hstMonitorXCtx_start
+                0xffffffffa1c000b4                boot_HstMonitorExtendedHandler
+                0xffffffffa1c00138                g_BootUsbVar
+
+.boot_code      0xffffffff88010000     0x10b0
+ hex/workshop/SW_V2130_csdk.elf(.boot_code)
+ .boot_code     0xffffffff88010000     0x10b0 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff88010010                _boot_sector
+                0xffffffff88010010                boot_Sector
+                0xffffffff880103e5                pmd_GetVoreVoltageDDRIndex
+                0xffffffff88010409                pmd_OpalSpiWrite
+                0xffffffff88010425                pmd_OpalSpiRead
+                0xffffffff8801043d                pmd_SetVcoreToDefaultVolt
+                0xffffffff88010595                tgt_GetDDRConfig
+                0xffffffff880105b1                boot_XcvClose
+                0xffffffff880105c5                boot_XcvRead
+                0xffffffff88010651                boot_XcvWrite
+                0xffffffff880106b9                boot_XcvOpen
+                0xffffffff880106fd                boot_XcvConfigure
+                0xffffffff880107ad                memd_GetRamClk
+                0xffffffff880107b9                DDR_Init_Config
+                0xffffffff880107e1                DDR_Get_Config
+                0xffffffff880108cd                memd_RamOpen
+                0xffffffff88010955                hal_EbcCsOpen
+                0xffffffff88010965                hal_EbcSramOpen
+                0xffffffff88010975                hal_EbcFlashOpen
+                0xffffffff880109a1                hal_IspiRegRead
+                0xffffffff88010a15                hal_AbbIspiWrite
+                0xffffffff88010a31                boot_SectorFixRom
+                0xffffffff88010a35                boot_SectorEnterBootMonitor
+                0xffffffff88010a51                boot_SysGetMetalId
+                0xffffffff88010a69                boot_SysGetFreq
+                0xffffffff88010b59                boot_SysWaitMicrosecond
+                0xffffffff88010b8d                boot_UpdateIspiDivider
+                0xffffffff88010bdd                boot_EbcSramOpen
+                0xffffffff88010c0d                boot_EbcCsOpen
+                0xffffffff88010c21                boot_EbcCsSetup
+                0xffffffff88010cf9                boot_MemInit
+                0xffffffff88010df1                boot_IspiRead
+                0xffffffff88010e3d                boot_MonitorKeyPressed
+                0xffffffff88010edd                boot_ForceUsbMonitorKeyCheck
+                0xffffffff88010f25                boot_ForceMonitorKeyCheck
+                0xffffffff88010f89                boot_BootSectorSetCommand
+                0xffffffff88010fa1                boot_BootSectorSetEbcFreq
+                0xffffffff88010fb5                boot_BootSectorGetEbcRamId
+                0xffffffff88010fc1                tgt_GetMemdFlashConfig
+                0xffffffff88010fcd                tgt_GetKeyMapIndex
+                0xffffffff88010ff1                tgt_GetBootDownloadKeyList
+                0xffffffff88011001                tgt_GetBootUsbDownloadKeyList
+                0xffffffff88011011                tgt_GetUsbDownloadByMicDet
+                0xffffffff88011015                tgt_GetMemdRamConfig
+                0xffffffff88011030                g_tgtMemdFlashCfg
+                0xffffffff88011038                g_tgtMemdRamCfg
+                0xffffffff88011060                g_tgtKeyMap
+                0xffffffff880110a0                g_tgtKeyBootDownload
+
 .bcpu_rom_text  0xffffffffa1e80000    0x137b0 load address 0xffffffff81e80000
  hex/workshop/SW_V2130_csdk.elf(.bcpu_rom_text)
  .bcpu_rom_text
@@ -1996,121 +1290,54 @@ Linker script and memory map
                 0xffffffffa1e92bb1                spc_TxProcess
                 0xffffffffa1e92c71                spc_UpdateOnFint
 
-.srambss        0xffffffff81c09620       0x70
- hex/workshop/SW_V2130_csdk.elf(.srambss)
- .srambss       0xffffffff81c09620       0x70 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff81c09620                g_halTraceDualCtx
+.bcpu_flash_end
+                0xffffffff88013e70       0x10
+ hex/workshop/SW_V2130_csdk.elf(.bcpu_flash_end)
+ .bcpu_flash_end
+                0xffffffff88013e70       0x10 hex/workshop/SW_V2130_csdk.elf
+
+.fixptr         0xffffffff81c0027c        0x4
+ hex/workshop/SW_V2130_csdk.elf(.fixptr)
+ .fixptr        0xffffffff81c0027c        0x4 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff81c0027c                g_halFixedPointer
+
+.cust_data      0xffffffff82300000       0x50 load address 0xffffffff88240e00
+ hex/workshop/workshop.elf(.cust_data)
+ .cust_data     0xffffffff82300000       0x50 hex/workshop/workshop.elf
+                0xffffffff82300000                __user_rw_start
+                0xffffffff82300000                willMsg
+                0xffffffff82300034                imei
+
+.spi_reg_debug  0xffffffffa2000000      0x980
+ hex/workshop/SW_V2130_csdk.elf(.spi_reg_debug)
+ .spi_reg_debug
+                0xffffffffa2000000      0x980 hex/workshop/SW_V2130_csdk.elf
+                0xffffffffa2000000                g_rfdXcvRegValue
+                0xffffffffa2000000                _spi_reg_debug_start
+                0xffffffffa2000500                g_abbSpiRegValue
+                0xffffffffa2000840                g_pmdSpiRegValue
+
+.bbsram_patch_data
+                0xffffffff81987870       0x30 load address 0xffffffff88012690
+ hex/workshop/SW_V2130_csdk.elf(.bbsram_patch_data)
+ .bbsram_patch_data
+                0xffffffff81987870       0x30 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff81987870                Copy_ChModeSaic
+                0xffffffff81987870                _bb_sram_patch_data_start
+                0xffffffff81987874                Rx_q_CCHSaic
+                0xffffffff81987894                Rx_CS_Saic
+                0xffffffff81987898                decodedUsfSaic
+                0xffffffff8198789c                gUsfDistance
+                0xffffffff8198789e                gDistance_max
+                0xffffffff819878a0                _bb_sram_patch_data_end
+
+.cust_rodata    0xffffffff882408c0      0x540
+ hex/workshop/workshop.elf(.cust_rodata)
+ .cust_rodata   0xffffffff882408c0      0x540 hex/workshop/workshop.elf
 
 .section_init   0xffffffff88240000       0x10
  hex/workshop/workshop.elf(.section_init)
  .section_init  0xffffffff88240000       0x10 hex/workshop/workshop.elf
-
-.sramdata       0xffffffff81c085b0      0x4c0 load address 0xffffffff8801b060
- hex/workshop/SW_V2130_csdk.elf(.sramdata)
- .sramdata      0xffffffff81c085b0      0x4c0 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff81c085b0                _sys_sram_data_start
-                0xffffffff81c088a8                g_SwTcuCfg
-                0xffffffff81c088ac                g_paParams
-                0xffffffff81c088bc                g_swParams
-                0xffffffff81c088cc                g_TxRxSwTcuVal
-                0xffffffff81c088e4                SW
-                0xffffffff81c088e8                g_paCalibPtr
-                0xffffffff81c088ec                XCV
-                0xffffffff81c088f0                g_xcvChipId
-                0xffffffff81c088f4                g_AfcOffset
-                0xffffffff81c088f8                g_dcoffsetflag
-                0xffffffff81c088fc                g_afcDacVal
-                0xffffffff81c088fe                rxTxTimeOffset
-                0xffffffff81c08900                g_CdacDelta
-                0xffffffff81c08904                g_lastSleepMode
-                0xffffffff81c08908                g_xcvCalibPtr
-                0xffffffff81c0890c                g_xcvCmdCtx
-                0xffffffff81c08918                g_xcvCalibSetPaRamp
-                0xffffffff81c08919                g_xcvCalibPaOffset
-                0xffffffff81c0891c                g_tempgpadcvalue
-                0xffffffff81c08928                g_RxPllFreqReg_05h
-                0xffffffff81c0892c                g_bandwideVal
-                0xffffffff81c08930                g_xcvParams
-                0xffffffff81c0895c                g_CDAC
-                0xffffffff81c08960                g_xcvCalibPaRampValue
-                0xffffffff81c08968                magnitude
-                0xffffffff81c08990                pal_fch_sync_max_attempt
-                0xffffffff81c08994                g_palCtx
-                0xffffffff81c08a50                g_palDebug
-
-.cust_rotext    0xffffffff88240010      0x8b0
- hex/workshop/workshop.elf(.cust_rotext)
- .cust_rotext   0xffffffff88240010      0x8b0 hex/workshop/workshop.elf
-                0xffffffff88240011                user_Main
-                0xffffffff8824002d                user_Init
-                0xffffffff88240075                AttachActivate
-                0xffffffff88240199                OnMqttReceived
-                0xffffffff882401bd                OnMqttReceiedData
-                0xffffffff88240201                OnMqttSubscribed
-                0xffffffff88240239                OnMqttConnection
-                0xffffffff882402ed                OnPublish
-                0xffffffff88240321                StartTimerPublish
-                0xffffffff8824034d                OnTimerPublish
-                0xffffffff882403f9                StartTimerConnect
-                0xffffffff88240425                OnTimerStartConnect
-                0xffffffff882404cd                SecondTaskEventDispatch
-                0xffffffff88240579                MainTask
-                0xffffffff88240739                workshop_Main
-                0xffffffff88240781                SecondTask
-
-.ucbss          0xffffffffa2056da0    0x24140
- hex/workshop/SW_V2130_csdk.elf(.ucbss)
- .ucbss         0xffffffffa2056da0    0x24140 hex/workshop/SW_V2130_csdk.elf
-                0xffffffffa2056da0                g_pxts_buffer
-                0xffffffffa2074000                g_UsbBulkOut
-                0xffffffffa2076000                g_UsbBulkIn
-                0xffffffffa2078000                g_calibUsedSw
-                0xffffffffa2078080                g_calibHstOpInfo
-                0xffffffffa2078088                g_calibHstXcv
-                0xffffffffa2078130                g_calibHstPa
-                0xffffffffa207935c                g_calibHstSw
-                0xffffffffa20793dc                g_calibHstBb
-                0xffffffffa2079d68                g_calibHstIIR
-                0xffffffffa2079e58                g_calibStubGlobalCtxPtr
-                0xffffffffa2079e5c                g_calibStubGlobalCtx
-                0xffffffffa207a374                g_calibStubGlobalNstCtx
-                0xffffffffa207aed4                g_calibStubGlobalNstCtxPtr
-
-.sramucdata     0xffffffffa1c08a70      0x260 load address 0xffffffff8801b520
- hex/workshop/SW_V2130_csdk.elf(.sramucdata)
- .sramucdata    0xffffffffa1c08a70      0x260 hex/workshop/SW_V2130_csdk.elf
-                0xffffffffa1c08a70                _sys_sram_uncached_start
-                0xffffffffa1c08a70                g_halGdbEnabled
-                0xffffffffa1c08c3c                sxr_active_Task
-                0xffffffffa1c08c44                g_halMapAccess
-                0xffffffffa1c08c90                g_uart_busy
-                0xffffffffa1c08c94                g_uart_r_busy
-                0xffffffffa1c08c9c                g_halLpsCtx
-
-.bcpu_sramucdata
-                0xffffffffa1c01ad0       0x40 load address 0xffffffff88013e30
- hex/workshop/SW_V2130_csdk.elf(.bcpu_sramucdata)
- .bcpu_sramucdata
-                0xffffffffa1c01ad0       0x40 hex/workshop/SW_V2130_csdk.elf
-                0xffffffffa1c01ad0                g_mailbox_pal2spc_RxBufInd
-                0xffffffffa1c01ad0                _bcpu_sys_sram_uncached_start
-                0xffffffffa1c01ad2                UsfDistanceNormal
-                0xffffffffa1c01ad4                DistanceMaxNormal
-                0xffffffffa1c01ad6                UsfDistanceSaic
-                0xffffffffa1c01ad8                DistanceMaxSaic
-                0xffffffffa1c01adc                g_mailbox_pal2spc_rxBandInd
-                0xffffffffa2000a00                _bcpu_ram_uncached_start
-                0xffffffff81c01ad0                _bcpu_sys_sram_cached_start
-                0xffffffff82000a00                _bcpu_ram_txt_start
-                0xffffffff82000a00                _bcpu_ram_cached_start
-
-.boot_rom_version_number
-                0xffffffff81e05ff8        0x4
- hex/workshop/SW_V2130_csdk.elf(.boot_rom_version_number)
- .boot_rom_version_number
-                0xffffffff81e05ff8        0x4 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff81e05ff8                g_bootRomVersionNumber
-                0xffffffff81e05ff8                _int_rom_version_number
 
 .rodata         0xffffffff881c63e0    0x4dfc0
  hex/workshop/SW_V2130_csdk.elf(.rodata)
@@ -4154,55 +3381,50 @@ Linker script and memory map
                 0xffffffff8820cd74                mbedtls_sha384_info
                 0xffffffff8820cda4                mbedtls_sha512_info
 
-.sys_sram_overlay_1
-                0xffffffff81c09690       0x10 load address 0xffffffff8801b790
- hex/workshop/SW_V2130_csdk.elf(.sys_sram_overlay_1)
- .sys_sram_overlay_1
-                0xffffffff81c09690       0x10 hex/workshop/SW_V2130_csdk.elf
+.cust_rotext    0xffffffff88240010      0x8b0
+ hex/workshop/workshop.elf(.cust_rotext)
+ .cust_rotext   0xffffffff88240010      0x8b0 hex/workshop/workshop.elf
+                0xffffffff88240011                user_Main
+                0xffffffff8824002d                user_Init
+                0xffffffff88240075                AttachActivate
+                0xffffffff88240199                OnMqttReceived
+                0xffffffff882401bd                OnMqttReceiedData
+                0xffffffff88240201                OnMqttSubscribed
+                0xffffffff88240239                OnMqttConnection
+                0xffffffff882402ed                OnPublish
+                0xffffffff88240321                StartTimerPublish
+                0xffffffff8824034d                OnTimerPublish
+                0xffffffff882403f9                StartTimerConnect
+                0xffffffff88240425                OnTimerStartConnect
+                0xffffffff882404cd                SecondTaskEventDispatch
+                0xffffffff88240579                MainTask
+                0xffffffff88240739                workshop_Main
+                0xffffffff88240781                SecondTask
 
-.mailbox        0xffffffffa1b00580      0x280
- hex/workshop/SW_V2130_csdk.elf(.mailbox)
- .mailbox       0xffffffffa1b00580      0x280 hex/workshop/SW_V2130_csdk.elf
-                0xffffffffa1b00580                g_mailbox
-                0xffffffffa1b00580                _dualport_sram_romed_mbx_start
-
-.bootsramdata   0xffffffff81c01f40       0x80 load address 0xffffffff880149f0
- hex/workshop/SW_V2130_csdk.elf(.bootsramdata)
- .bootsramdata  0xffffffff81c01f40       0x80 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff81c01f40                g_bootSysCsAddress
-                0xffffffff81c01f44                g_halSysCsAddress
-                0xffffffff81c01f48                g_halSysSystemFreq
-                0xffffffff81c01f58                g_spiflash_ID
-                0xffffffff81c01f64                g_spiCfg
-                0xffffffff81c01fac                g_ddrIndex
-                0xffffffff81c01fae                memd_cfg_done
-                0xffffffff81c01fb4                g_ddrConfig
-                0xffffffff81c01fb8                g_ddr_table_size
-                0xffffffff81c01fbc                memd_cfg
-
-.bbsram_patch_ucdata
-                0xffffffffa19878a0      0x320 load address 0xffffffff880126c0
- hex/workshop/SW_V2130_csdk.elf(.bbsram_patch_ucdata)
- .bbsram_patch_ucdata
-                0xffffffffa19878a0      0x320 hex/workshop/SW_V2130_csdk.elf
-                0xffffffffa19878a0                _bb_sram_patch_ucdata_start
-                0xffffffffa19878a0                g_RxSaicEnFlag
-                0xffffffffa19878a4                NBlockDataOutSaic
-                0xffffffffa19879bc                g_rx_Saic_Bfi_Last_ind
-                0xffffffffa19879c0                SACCHSaic
-                0xffffffffa1987bc0                _bb_sram_patch_ucdata_end
-
-.ram            0xffffffff82001e10       0xe0 load address 0xffffffff8801caf0
- hex/workshop/SW_V2130_csdk.elf(.ram)
- .ram           0xffffffff82001e10       0xe0 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff82001e10                _ram_special_cached_start
-                0xffffffff82001e10                _ram_txt_start
-                0xffffffff82001e11                hal_SysSoftResetNoFlash
-                0xffffffff82001e35                hal_SysSoftReset
-                0xffffffff82001e71                hal_SysRestart
-                0xffffffff82001ea9                hal_GetVocDma
-                0xffffffff82001ead                hal_VocStateActive
-                0xffffffff82001ec1                hal_DmaDone
+.bbsram_globals
+                0xffffffff81986640      0x1b9
+ hex/workshop/SW_V2130_csdk.elf(.bbsram_globals)
+ .bbsram_globals
+                0xffffffff81986640      0x1b9 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff81986640                bcpu_error_code
+                0xffffffff81986640                _bb_sram_romed_globals_start
+                0xffffffff81986644                bcpu_error_status
+                0xffffffff81986648                bcpu_sp_context
+                0xffffffff8198664c                bcpu_stack_base
+                0xffffffff81986650                bcpu_main_entry
+                0xffffffff81986654                spal_GdbGData
+                0xffffffff8198665c                g_spalIrqRegistry
+                0xffffffff81986660                g_spalProfileControl
+                0xffffffff8198668c                g_spcAmrState
+                0xffffffff81986694                g_spcCtxAmrCfgTxChg
+                0xffffffff81986698                g_spcRxCountTcu
+                0xffffffff8198669c                g_spcSwTxFifo
+                0xffffffff81986788                g_sppGlobalParams
+                0xffffffff819867c0                g_sppA53CountInit
+                0xffffffff819867c4                g_sppCipherCipherA53Nb
+                0xffffffff819867c8                g_sppCipherDecipherA53Nb
+                0xffffffff819867f8                g_sppFullBurstReady
+                0xffffffff819867f9                _bb_sram_romed_globals_end
 
 .bbsram_patch_ucbss
                 0xffffffffa1987bc0      0x100
@@ -4216,275 +3438,6 @@ Linker script and memory map
                 0xffffffff81b00000                _bcpu_dualport_sram_cached_data_end
                 0xffffffff81b00000                _bcpu_dualport_sram_text_end
                 0xffffffff81b00000                _bcpu_dualport_sram_cached_data_start
-
-.spi_reg_debug  0xffffffffa2000000      0x980
- hex/workshop/SW_V2130_csdk.elf(.spi_reg_debug)
- .spi_reg_debug
-                0xffffffffa2000000      0x980 hex/workshop/SW_V2130_csdk.elf
-                0xffffffffa2000000                g_rfdXcvRegValue
-                0xffffffffa2000000                _spi_reg_debug_start
-                0xffffffffa2000500                g_abbSpiRegValue
-                0xffffffffa2000840                g_pmdSpiRegValue
-
-.boot_sector_struct
-                0xffffffff81c00220       0x1c
- hex/workshop/SW_V2130_csdk.elf(.boot_sector_struct)
- .boot_sector_struct
-                0xffffffff81c00220       0x1c hex/workshop/SW_V2130_csdk.elf
-
-.bbsramu        0xffffffffa1981e00     0x1bf0
- hex/workshop/SW_V2130_csdk.elf(.bbsramu)
- .bbsramu       0xffffffffa1981e00     0x1bf0 hex/workshop/SW_V2130_csdk.elf
-                0xffffffffa1981e00                _mbbsramu
-                0xffffffffa1981e00                _bb_sram_romed_uncached_start
-                0xffffffffa1981e00                g_spcStaticBufTabSaic
-                0xffffffffa19822f0                g_spcStaticBufTab
-
-.sramtext       0xffffffff81c01fc0     0x65f0 load address 0xffffffff88014a70
- hex/workshop/SW_V2130_csdk.elf(.sramtext)
- .sramtext      0xffffffff81c01fc0     0x65f0 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff81c01fc0                _sys_sram_txt_start
-                0xffffffff81c01fc1                hal_LpsAllowSkipFrame
-                0xffffffff81c01fcd                hal_LpsLightSleep
-                0xffffffff81c01fe8                hal_lpsPuFsmRun
-                0xffffffff81c02295                hal_LpsDeepSleep
-                0xffffffff81c022f9                hal_LpsCalibrate
-                0xffffffff81c02431                hal_RfspiRemWinCmd
-                0xffffffff81c02469                hal_RfspiInitQueue
-                0xffffffff81c02481                hal_RfspiFlushFifo
-                0xffffffff81c024a5                hal_RfspiPushData
-                0xffffffff81c02521                hal_RfspiFillFifo
-                0xffffffff81c02689                hal_RfspiSetupFifo
-                0xffffffff81c0272d                hal_RfspiNewCmd
-                0xffffffff81c02805                hal_SpeechPushRxPopTx
-                0xffffffff81c028f5                hal_TcuSetTco
-                0xffffffff81c02905                hal_TcuClrTco
-                0xffffffff81c02915                hal_TcuClrEvtRange
-                0xffffffff81c02941                hal_TcuClrAllEvents
-                0xffffffff81c02955                hal_TcuSetEvtPtr
-                0xffffffff81c02961                hal_TcuGetEvtPtr
-                0xffffffff81c0296d                hal_TcuSetEvent
-                0xffffffff81c029e1                hal_TcuSetWrap
-                0xffffffff81c02ab4                pmd_EnterDeepSleepStep2
-                0xffffffff81c02af0                pmd_ExitDeepSleepStep1
-                0xffffffff81c02b69                pmd_ExitDeepSleepStep2
-                0xffffffff81c02bb1                pmd_EnterDeepSleepStep1
-                0xffffffff81c0301d                PowerOffset
-                0xffffffff81c03165                Pcl2dBm
-                0xffffffff81c032dd                xcvSetArfcn
-                0xffffffff81c0343d                xcvGetDigGain
-                0xffffffff81c03479                rfd_XcvGetAgcGain
-                0xffffffff81c034cd                rfd_XcvGetAfcOffset
-                0xffffffff81c034d1                rfd_XcvSetRxTxTimeOffset
-                0xffffffff81c034f9                rfd_XcvFrameStart
-                0xffffffff81c034fd                rfd_XcvFrequencyTuning
-                0xffffffff81c0364d                rfd_XcvRxOff
-                0xffffffff81c036a1                xcvReadReg
-                0xffffffff81c036d9                xcvBuildSpiCmd
-                0xffffffff81c03715                rfd_XcvSleep
-                0xffffffff81c03801                rfd_XcvWakeUp
-                0xffffffff81c03865                rfd_XcvTxOff
-                0xffffffff81c038b5                rfd_XcvTxOn
-                0xffffffff81c04315                rfd_XcvRxOn
-                0xffffffff81c04add                dtmf_calc_magnitude
-                0xffffffff81c04bb9                hal_ComregsGetSnap
-                0xffffffff81c04bc5                hal_ComregsClrMask
-                0xffffffff81c04bfd                hal_ComregsSetMask
-                0xffffffff81c04c35                hal_FintIrqGetStatus
-                0xffffffff81c04c45                hal_FintUserHandler
-                0xffffffff81c04c5d                hal_FintIrqHandler
-                0xffffffff81c04c79                hal_GoudaGetTiming
-                0xffffffff81c04c85                hal_GoudaSetTiming
-                0xffffffff81c04c95                hal_GpioClr
-                0xffffffff81c04ced                hal_GpioSet
-                0xffffffff81c04d45                hal_IrqDispatch
-                0xffffffff81c04f20                sxr_TaskSwap
-                0xffffffff81c04ff0                sxr_JobSwap
-                0xffffffff81c050f1                palSetUpperBound
-                0xffffffff81c0510d                palGetBand
-                0xffffffff81c05141                palCalcMonPower
-                0xffffffff81c05181                pal_EnableAuxClkCtrl
-                0xffffffff81c0518d                pal_SimIrqHandler
-                0xffffffff81c05231                pal_SetDummyPchDetection
-                0xffffffff81c05265                pal_GetDummyPchDetection
-                0xffffffff81c05279                pal_SetCalibProcess
-                0xffffffff81c05285                pal_SetFchDetectMode
-                0xffffffff81c052b5                pal_GetNBurstResultMultslot
-                0xffffffff81c05321                pal_UpdateCdacValue
-                0xffffffff81c05339                pal_UpdateAfcDacValue
-                0xffffffff81c05351                pal_GetCdacOffset
-                0xffffffff81c05361                pal_GetAfcDacOffset
-                0xffffffff81c05371                pal_DspIrqHandler
-                0xffffffff81c053e9                pal_FintIrqHandler
-                0xffffffff81c05409                pal_GetUsf
-                0xffffffff81c05465                pal_GetFchResult
-                0xffffffff81c05505                pal_ABurstEncoding
-                0xffffffff81c055a9                pal_GetSchResult
-                0xffffffff81c056f1                pal_GetMonResult
-                0xffffffff81c05755                palReorderWin
-                0xffffffff81c05819                pal_NblockEncoding
-                0xffffffff81c05911                pal_GetNBlockResult
-                0xffffffff81c05a8d                pal_GetNBurstResult
-                0xffffffff81c05cc9                pal_TimeTuningSuspend
-                0xffffffff81c05d2d                pal_FrequencyTuning
-                0xffffffff81c05d8d                pal_TimeTuning
-                0xffffffff81c05dfd                pal_TimeTuningSuspendCheck
-                0xffffffff81c05e35                pal_SynchronizationChange
-                0xffffffff81c05eed                pal_AuxClkOff
-                0xffffffff81c05f11                pal_FrameEnd
-                0xffffffff81c061c9                pal_FrameStart
-                0xffffffff81c064b9                palProgramTxWin
-                0xffffffff81c06605                pal_SetTxWin
-                0xffffffff81c06829                palRxBstOff
-                0xffffffff81c06891                pal_CloseFchRxWin
-                0xffffffff81c06921                palRxBstOn
-                0xffffffff81c06991                palSetBcpuTcuIrqAfterWinEndDate
-                0xffffffff81c069ed                palProgramRxWin
-                0xffffffff81c06d69                pal_SetNBurstRxWin
-                0xffffffff81c06f5d                pal_SetSchRxWin
-                0xffffffff81c0705d                pal_SetFchRxWin
-                0xffffffff81c07195                pal_SetMonRxWin
-                0xffffffff81c07271                _sxr_UpMemCallerAdd
-                0xffffffff81c07289                sxr_GetLink
-                0xffffffff81c07291                sxr_GetMemSize
-                0xffffffff81c072a5                sxr_Link
-                0xffffffff81c07311                _sxr_HFree
-                0xffffffff81c07591                _sxr_HMalloc
-                0xffffffff81c0787d                sxr_TimerDelivery
-                0xffffffff81c078b9                sxr_ClearJEvent
-                0xffffffff81c078e9                sxr_SkipFrameEndEvt
-                0xffffffff81c078fd                sxr_IsJobInitializing
-                0xffffffff81c07909                sxr_InitJobEventStatus
-                0xffffffff81c07959                sxr_AutoStop
-                0xffffffff81c079e9                sxr_WaitJEvent
-                0xffffffff81c07bb9                sxr_RaiseJEvent
-                0xffffffff81c07c9d                sxr_RaiseFrameJEvent
-                0xffffffff81c07cc9                sxr_RaiseLongLivedJEvent
-                0xffffffff81c07cf5                sxr_FrameBoundary
-                0xffffffff81c07d59                sxr_GetJobWaitingPeriod
-                0xffffffff81c07d89                sxr_WaitJDuration
-                0xffffffff81c07ea1                sxr_FrameJobScheduling
-                0xffffffff81c07fad                sxr_StopJob
-                0xffffffff81c083fd                sxr_ResumeJob
-                0xffffffff81c08509                sxr_ResetJob
-
-.bcpu_rom.crc   0xffffffff81e97ffc        0x4
- hex/workshop/SW_V2130_csdk.elf(.bcpu_rom.crc)
- .bcpu_rom.crc  0xffffffff81e97ffc        0x4 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff81e97ffc                __bcpu_rom_crc
-                0x00000000000001b9                _bb_sram_not_romed_globals_start
-                0x00000000000001b9                _bb_sram_not_romed_globals_end
-
-.bbsram         0xffffffff81980000     0x1e00
- hex/workshop/SW_V2130_csdk.elf(.bbsram)
- .bbsram        0xffffffff81980000     0x1e00 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff81980000                _bb_sram_romed_cached_start
-                0xffffffff81980000                g_spcItlvBufTabSaic
-                0xffffffff81980a00                g_spcItlvBufTab
-                0xffffffff81981920                g_spcCtxStruct
-                0xffffffff81981920                _bb_sram_romed_itlv_buf_end
-
-.sys_sram_overlay_0
-                0xffffffff81c09690       0x10 load address 0xffffffff8801b780
- hex/workshop/SW_V2130_csdk.elf(.sys_sram_overlay_0)
- .sys_sram_overlay_0
-                0xffffffff81c09690       0x10 hex/workshop/SW_V2130_csdk.elf
-
-.boot_code      0xffffffff88010000     0x10b0
- hex/workshop/SW_V2130_csdk.elf(.boot_code)
- .boot_code     0xffffffff88010000     0x10b0 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff88010010                _boot_sector
-                0xffffffff88010010                boot_Sector
-                0xffffffff880103e5                pmd_GetVoreVoltageDDRIndex
-                0xffffffff88010409                pmd_OpalSpiWrite
-                0xffffffff88010425                pmd_OpalSpiRead
-                0xffffffff8801043d                pmd_SetVcoreToDefaultVolt
-                0xffffffff88010595                tgt_GetDDRConfig
-                0xffffffff880105b1                boot_XcvClose
-                0xffffffff880105c5                boot_XcvRead
-                0xffffffff88010651                boot_XcvWrite
-                0xffffffff880106b9                boot_XcvOpen
-                0xffffffff880106fd                boot_XcvConfigure
-                0xffffffff880107ad                memd_GetRamClk
-                0xffffffff880107b9                DDR_Init_Config
-                0xffffffff880107e1                DDR_Get_Config
-                0xffffffff880108cd                memd_RamOpen
-                0xffffffff88010955                hal_EbcCsOpen
-                0xffffffff88010965                hal_EbcSramOpen
-                0xffffffff88010975                hal_EbcFlashOpen
-                0xffffffff880109a1                hal_IspiRegRead
-                0xffffffff88010a15                hal_AbbIspiWrite
-                0xffffffff88010a31                boot_SectorFixRom
-                0xffffffff88010a35                boot_SectorEnterBootMonitor
-                0xffffffff88010a51                boot_SysGetMetalId
-                0xffffffff88010a69                boot_SysGetFreq
-                0xffffffff88010b59                boot_SysWaitMicrosecond
-                0xffffffff88010b8d                boot_UpdateIspiDivider
-                0xffffffff88010bdd                boot_EbcSramOpen
-                0xffffffff88010c0d                boot_EbcCsOpen
-                0xffffffff88010c21                boot_EbcCsSetup
-                0xffffffff88010cf9                boot_MemInit
-                0xffffffff88010df1                boot_IspiRead
-                0xffffffff88010e3d                boot_MonitorKeyPressed
-                0xffffffff88010edd                boot_ForceUsbMonitorKeyCheck
-                0xffffffff88010f25                boot_ForceMonitorKeyCheck
-                0xffffffff88010f89                boot_BootSectorSetCommand
-                0xffffffff88010fa1                boot_BootSectorSetEbcFreq
-                0xffffffff88010fb5                boot_BootSectorGetEbcRamId
-                0xffffffff88010fc1                tgt_GetMemdFlashConfig
-                0xffffffff88010fcd                tgt_GetKeyMapIndex
-                0xffffffff88010ff1                tgt_GetBootDownloadKeyList
-                0xffffffff88011001                tgt_GetBootUsbDownloadKeyList
-                0xffffffff88011011                tgt_GetUsbDownloadByMicDet
-                0xffffffff88011015                tgt_GetMemdRamConfig
-                0xffffffff88011030                g_tgtMemdFlashCfg
-                0xffffffff88011038                g_tgtMemdRamCfg
-                0xffffffff88011060                g_tgtKeyMap
-                0xffffffff880110a0                g_tgtKeyBootDownload
-
-.ucbackup       0xffffffffa2056d80       0x10
- hex/workshop/SW_V2130_csdk.elf(.ucbackup)
- .ucbackup      0xffffffffa2056d80       0x10 hex/workshop/SW_V2130_csdk.elf
-                0xffffffffa2056d84                g_stackAutoCallStruct
-
-.cust_rodata    0xffffffff882408c0      0x540
- hex/workshop/workshop.elf(.cust_rodata)
- .cust_rodata   0xffffffff882408c0      0x540 hex/workshop/workshop.elf
-
-.sys_sram_overlay_5
-                0xffffffff81c09690       0x10 load address 0xffffffff8801b7d0
- hex/workshop/SW_V2130_csdk.elf(.sys_sram_overlay_5)
- .sys_sram_overlay_5
-                0xffffffff81c09690       0x10 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff81c0fffc                _sys_sram_non_romed_top
-
-.misc           0xffffffff882143a0       0x20
- hex/workshop/SW_V2130_csdk.elf(.misc)
- .misc          0xffffffff882143a0       0x20 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff882143a1                hal_clk_dump
-                0xffffffff883f6000                _user_data_start
-                0xffffffff883fa000                _calib_start
-                0xffffffff883fe000                _factory_start
-
-.sramucbss      0xffffffffa1c08ce0      0x940
- hex/workshop/SW_V2130_csdk.elf(.sramucbss)
- .sramucbss     0xffffffffa1c08ce0      0x940 hex/workshop/SW_V2130_csdk.elf
-                0xffffffffa1c08ce0                g_halMapTable
-                0xffffffffa1c094c8                g_sim_data_buffer
-
-.bcpu_flash_end
-                0xffffffff88013e70       0x10
- hex/workshop/SW_V2130_csdk.elf(.bcpu_flash_end)
- .bcpu_flash_end
-                0xffffffff88013e70       0x10 hex/workshop/SW_V2130_csdk.elf
-
-.cust_bss       0xffffffff82300050       0x60
- hex/workshop/workshop.elf(.cust_bss)
- .cust_bss      0xffffffff82300050       0x60 hex/workshop/workshop.elf
-                0xffffffff82300050                temp000___
-                0xffffffff82300054                g_InterfaceVtbl
-                0xffffffff82300058                mqttStatus
-                0xffffffff82300068                ci
 
 .rotext         0xffffffff880719c0   0x154a20
  hex/workshop/SW_V2130_csdk.elf(.rotext)
@@ -10701,10 +9654,77 @@ Linker script and memory map
                 0xffffffff881c632d                writen
                 0xffffffff881c637d                log_debug
 
-.bcpu_rodata    0xffffffff88011610       0x10
- hex/workshop/SW_V2130_csdk.elf(.bcpu_rodata)
- .bcpu_rodata   0xffffffff88011610       0x10 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff88011610                g_spcMapAccess
+.sramucbss      0xffffffffa1c08ce0      0x940
+ hex/workshop/SW_V2130_csdk.elf(.sramucbss)
+ .sramucbss     0xffffffffa1c08ce0      0x940 hex/workshop/SW_V2130_csdk.elf
+                0xffffffffa1c08ce0                g_halMapTable
+                0xffffffffa1c094c8                g_sim_data_buffer
+
+.sys_sram_overlay_2
+                0xffffffff81c09690       0x10 load address 0xffffffff8801b7a0
+ hex/workshop/SW_V2130_csdk.elf(.sys_sram_overlay_2)
+ .sys_sram_overlay_2
+                0xffffffff81c09690       0x10 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff81c09690                pcmbuf_overlay
+
+.bootsramdata   0xffffffff81c01f40       0x80 load address 0xffffffff880149f0
+ hex/workshop/SW_V2130_csdk.elf(.bootsramdata)
+ .bootsramdata  0xffffffff81c01f40       0x80 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff81c01f40                g_bootSysCsAddress
+                0xffffffff81c01f44                g_halSysCsAddress
+                0xffffffff81c01f48                g_halSysSystemFreq
+                0xffffffff81c01f58                g_spiflash_ID
+                0xffffffff81c01f64                g_spiCfg
+                0xffffffff81c01fac                g_ddrIndex
+                0xffffffff81c01fae                memd_cfg_done
+                0xffffffff81c01fb4                g_ddrConfig
+                0xffffffff81c01fb8                g_ddr_table_size
+                0xffffffff81c01fbc                memd_cfg
+
+.sys_sram_overlay_0
+                0xffffffff81c09690       0x10 load address 0xffffffff8801b780
+ hex/workshop/SW_V2130_csdk.elf(.sys_sram_overlay_0)
+ .sys_sram_overlay_0
+                0xffffffff81c09690       0x10 hex/workshop/SW_V2130_csdk.elf
+
+.boot_sector_struct
+                0xffffffff81c00220       0x1c
+ hex/workshop/SW_V2130_csdk.elf(.boot_sector_struct)
+ .boot_sector_struct
+                0xffffffff81c00220       0x1c hex/workshop/SW_V2130_csdk.elf
+
+.bootsramtext   0xffffffff81c01b10      0x430 load address 0xffffffff880145c0
+ hex/workshop/SW_V2130_csdk.elf(.bootsramtext)
+ .bootsramtext  0xffffffff81c01b10      0x430 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff81c01b10                boot_SysSetupPLL
+                0xffffffff81c01b9c                boot_SysShutdownPLL
+                0xffffffff81c01be5                boot_SysGetChipId
+                0xffffffff81c01c29                hal_HstSendEvent
+                0xffffffff81c01c85                hal_SysSetSpiFlashClkToFast
+                0xffffffff81c01ca9                hal_SysWaitMicrosecond
+                0xffffffff81c01ce5                hal_TimDelay
+                0xffffffff81c01cfd                hal_TimGetUpTime
+                0xffffffff81c01d09                boot_EbcCsSetupWithCallback
+                0xffffffff81c01d51                hal_DisableUsbDp
+                0xffffffff81c01d65                hal_IspiRegWrite
+                0xffffffff81c01dc9                hal_IspiTxFinished
+                0xffffffff81c01dd9                hal_IspiTxFifoAvail
+                0xffffffff81c01de9                hal_IspiSendData
+                0xffffffff81c01e21                memd_FlashWakeup
+                0xffffffff81c01e31                memd_FlashSleep
+                0xffffffff81c01e41                memd_GetCfgDDRIndex
+
+.boot_sector_struct_ptr
+                0xffffffff81c00278        0x4
+ hex/workshop/SW_V2130_csdk.elf(.boot_sector_struct_ptr)
+ .boot_sector_struct_ptr
+                0xffffffff81c00278        0x4 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff81c00278                g_bootSectorStructPtr
+
+.ucbackup       0xffffffffa2056d80       0x10
+ hex/workshop/SW_V2130_csdk.elf(.ucbackup)
+ .ucbackup      0xffffffffa2056d80       0x10 hex/workshop/SW_V2130_csdk.elf
+                0xffffffffa2056d84                g_stackAutoCallStruct
 
 .main_entry_section
                 0xffffffff88013e80      0x460
@@ -10718,6 +9738,34 @@ Linker script and memory map
                 0xffffffff88013f0c                boot_Loader
                 0xffffffff880142e0                _board_config_start
                 0xffffffff880142e0                _board_config_end
+
+.bootsrambss    0xffffffff81c08cd0       0x10
+ hex/workshop/SW_V2130_csdk.elf(.bootsrambss)
+ .bootsrambss   0xffffffff81c08cd0       0x10 hex/workshop/SW_V2130_csdk.elf
+
+.bcpu_rotext    0xffffffff88011100      0x510
+ hex/workshop/SW_V2130_csdk.elf(.bcpu_rotext)
+ .bcpu_rotext   0xffffffff88011100      0x510 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff88011101                bcpu_main
+                0xffffffff880114d1                patch_Open
+                0xffffffff88011535                patch_GetLocation
+                0xffffffff8801155d                patch_Enable
+                0xffffffff88011581                patch_ReplaceFunction
+
+.bcpu_rom.crc   0xffffffff81e97ffc        0x4
+ hex/workshop/SW_V2130_csdk.elf(.bcpu_rom.crc)
+ .bcpu_rom.crc  0xffffffff81e97ffc        0x4 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff81e97ffc                __bcpu_rom_crc
+                0x00000000000001b9                _bb_sram_not_romed_globals_start
+                0x00000000000001b9                _bb_sram_not_romed_globals_end
+
+.bcpu_rom_version_number
+                0xffffffff81e97ff8        0x4
+ hex/workshop/SW_V2130_csdk.elf(.bcpu_rom_version_number)
+ .bcpu_rom_version_number
+                0xffffffff81e97ff8        0x4 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff81e97ff8                g_bcpuRomVersionNumber
+                0xffffffff81e97ff8                _bcpu_rom_version_number
 
 .ramtext        0xffffffff82001ef0    0x15200 load address 0xffffffff8801cbd0
  hex/workshop/SW_V2130_csdk.elf(.ramtext)
@@ -11321,10 +10369,24 @@ Linker script and memory map
                 0xffffffff82017045                __fixdfsi
                 0xffffffff820170a9                __clzsi2
 
-.irqsram        0xffffffff81c00280      0x2e0 load address 0xffffffff880142e0
- hex/workshop/SW_V2130_csdk.elf(.irqsram)
- .irqsram       0xffffffff81c00280      0x2e0 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff81c00280                _sxr_Irq_handler
+.bootbss        0xffffffff82056d90       0x10
+ hex/workshop/SW_V2130_csdk.elf(.bootbss)
+ .bootbss       0xffffffff82056d90       0x10 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff82056d90                g_memdFlashBaseAddress
+
+.rom_entries_cached
+                0xffffffff81c00194       0x54
+ hex/workshop/SW_V2130_csdk.elf(.rom_entries_cached)
+ .rom_entries_cached
+                0xffffffff81c00194       0x54 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff81c00194                xcpu_error_code
+                0xffffffff81c00198                xcpu_error_status
+                0xffffffff81c0019c                xcpu_sp_context
+                0xffffffff81c001a0                sxr_IrqStack_pointer
+                0xffffffff81c001a4                g_bootResetCause
+                0xffffffff81c001a8                g_bootBootMode
+                0xffffffff81c001ac                g_bootUartMonitorBrDetected
+                0xffffffff81c001b0                g_bootUartMonitorBaudRate
 
 .bbsram_patch_text
                 0xffffffff81986800     0x1070 load address 0xffffffff88011620
@@ -11337,15 +10399,436 @@ Linker script and memory map
                 0xffffffff81987431                patch_spp_EqualizeNBurst
                 0xffffffff81987870                _bb_sram_patch_text_end
 
-.rom_entries_uncached
-                0xffffffffa1c000a0       0xf4
- hex/workshop/SW_V2130_csdk.elf(.rom_entries_uncached)
- .rom_entries_uncached
-                0xffffffffa1c000a0       0xf4 hex/workshop/SW_V2130_csdk.elf
-                0xffffffffa1c000a0                boot_HstMonitorXCtx
-                0xffffffffa1c000a0                _hstMonitorXCtx_start
-                0xffffffffa1c000b4                boot_HstMonitorExtendedHandler
-                0xffffffffa1c00138                g_BootUsbVar
+.bcpu_rodata    0xffffffff88011610       0x10
+ hex/workshop/SW_V2130_csdk.elf(.bcpu_rodata)
+ .bcpu_rodata   0xffffffff88011610       0x10 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff88011610                g_spcMapAccess
+
+.sys_sram_overlay_1
+                0xffffffff81c09690       0x10 load address 0xffffffff8801b790
+ hex/workshop/SW_V2130_csdk.elf(.sys_sram_overlay_1)
+ .sys_sram_overlay_1
+                0xffffffff81c09690       0x10 hex/workshop/SW_V2130_csdk.elf
+
+.bss            0xffffffff8207aee0    0x33660
+ hex/workshop/SW_V2130_csdk.elf(.bss)
+ .bss           0xffffffff8207aee0    0x33660 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff8207aee0                g_halLpsSleptBefore
+                0xffffffff8207aee1                g_halSysLpsLock
+                0xffffffff8207aee4                g_halCalibration
+                0xffffffff8207af54                g_halSpeechMutedCount
+                0xffffffff8207af68                g_halSpeechFifo
+                0xffffffff8207b118                g_halModuleIfcChannelDebug
+                0xffffffff8207b218                g_halModuleIfcChannelDebugPos
+                0xffffffff8207b224                g_halTraceRxCtx
+                0xffffffff8207b28c                g_palCalibration
+                0xffffffff8207b290                g_palHandlers
+                0xffffffff8207b29c                g_Calib_OnSite
+                0xffffffff8207b29e                g_pmdMuteSpk
+                0xffffffff8207b344                g_pmdConfig
+                0xffffffff8207b352                g_usbCharging
+                0xffffffff8207b3d0                sxs_usrInitTaskId
+                0xffffffff8207b3d4                sxs_CmnTaskId
+                0xffffffff8207b3fc                pSimCtx
+                0xffffffff8207b400                sim_Data
+                0xffffffff8207b708                g_Semaphore
+                0xffffffff8207b70c                Usim_ADNAddress
+                0xffffffff8207b8cc                Usim_ADNPath
+                0xffffffff8207bb70                WaitSwTimer
+                0xffffffff8207bb74                g_sim_present
+                0xffffffff8207bb78                Dummy_AD_BinaryData
+                0xffffffff8207bb80                sm_Data
+                0xffffffff8207bc18                psm_Data
+                0xffffffff8207bc1c                sm_TabMobileOrgTI
+                0xffffffff8207bc5c                sm_TabNetworkOrgTI
+                0xffffffff8207bc9c                SMS_debug_buffer_index
+                0xffffffff8207bd60                gp_smsCurData
+                0xffffffff8207bd64                SMS_debug_buffer
+                0xffffffff8207bdb4                snd_Data
+                0xffffffff8207be8c                pSndCtx
+                0xffffffff8207beb8                gp_ssCurData
+                0xffffffff8207bec0                sxr_QueueDesc
+                0xffffffff8207d540                sxr_QueueEnv
+                0xffffffff8207e4e0                sxr_QueueFreeDesc
+                0xffffffff8207e4e2                sxr_QueueFreeEnv
+                0xffffffff8207e4e4                sxr_SemaInfo
+                0xffffffff8207e63c                g_sxsFsIdleHookFuncPtr
+                0xffffffff8207e640                g_sxsDebugIdleHookElem
+                0xffffffff8207e668                g_sxRaiseTime
+                0xffffffff8207e670                sxs_IoCtx
+                0xffffffff8207e6b4                sxr_Job
+                0xffffffff8207e6b8                sxr_Heap
+                0xffffffff8207e7d0                sxr_Cluster
+                0xffffffff8207e8b0                sxr_NbCluster
+                0xffffffff8207e8b4                sxr_MemoryAlert
+                0xffffffff8207e8bc                sxr_MemTracker
+                0xffffffff8207eec4                sxr_Mutex
+                0xffffffff8207eef8                sxr_Sbx
+                0xffffffff82082470                sxs_Spy
+                0xffffffff82082578                sxr_TCtx
+                0xffffffff820825a0                sxr_TEnv
+                0xffffffff82083544                sxr_Task
+                0xffffffff82083af0                g_uat_stran_callbck
+                0xffffffff82083b34                gpf_uflash_write_block
+                0xffffffff82083b38                gpf_uflash_read_block
+                0xffffffff82083b50                g_umss_flash_handler
+                0xffffffff82083c18                g_vppMicNoiseSuppressRAMX
+                0xffffffff82085b58                g_vppReceiverNoiseSuppressRAMX
+                0xffffffff82087a98                g_vppAecRAMX
+                0xffffffff820895c8                g_vppMicAgcRAMX
+                0xffffffff820899b0                g_vppReceiverAgcRAMX
+                0xffffffff82089d98                g_vppSpeechCode
+                0xffffffff8208c318                g_vppSpeechRAMX
+                0xffffffff8208f1f8                g_api_rr_task_started
+                0xffffffff8208f200                apiData
+                0xffffffff8208f258                pAPIData
+                0xffffffff8208f25c                watchdogDoNotFeedInIdle
+                0xffffffff8208f260                g_audCodecGalliteAifCfg
+                0xffffffff8208f274                g_audSetHeadMaxDigitalGain
+                0xffffffff8208f275                g_audSetMicMaxGain
+                0xffffffff8208f298                g_BalFlashInitProgramDone
+                0xffffffff8208f29c                g_BalTasks
+                0xffffffff8208f2ac                g_PreKeyCode
+                0xffffffff8208f358                g_calibUsedOpInfo
+                0xffffffff8208f360                g_calibUsedXcv
+                0xffffffff8208f408                g_calibUsedPa
+                0xffffffff82090634                g_calibUsedBb
+                0xffffffff82090fc0                g_calibUsedIIR
+                0xffffffff820910b0                g_calibUsed_audio_voc
+                0xffffffff82092710                g_calibUsed_audio_music
+                0xffffffff82092f28                gp_cb_Data
+                0xffffffff82092f8c                gp_ccCurData
+                0xffffffff82093104                g_CfwNVInfo
+                0xffffffff82093108                g_CfwNv
+                0xffffffff82093aa4                nQueueid
+                0xffffffff82093aa8                g_CosBaseAdd
+                0xffffffff82093aac                g_CswBaseAdd
+                0xffffffff82093ab0                g_CosHeapSize
+                0xffffffff82093ab4                g_CswHeapSize
+                0xffffffff82093ab8                g_CswMallocNum
+                0xffffffff82093abc                g_CosMallocNum
+                0xffffffff82093ac8                g_hCosMmiTask
+                0xffffffff82093acc                g_hCosATTask
+                0xffffffff82093ad0                Playstate
+                0xffffffff82093ad4                PlayLenTemp
+                0xffffffff82093ad8                BzPlayState
+                0xffffffff82093adc                g_VIBRATING_state
+                0xffffffff82093ae0                g_FLASH_state
+                0xffffffff82093ae4                gmycallback
+                0xffffffff82093ae8                PlayLen
+                0xffffffff82093aec                BzDuration
+                0xffffffff82093af0                BzBuffer
+                0xffffffff82093af4                g_KeyBoard_Init_Status
+                0xffffffff82093af5                Play_music
+                0xffffffff82093af6                audioBusy
+                0xffffffff82093af8                g_playToneAudioTempTime
+                0xffffffff82093afc                isSPKMute
+                0xffffffff82093b00                term_num
+                0xffffffff82093b04                audioItf
+                0xffffffff82093b08                audioItfBackup
+                0xffffffff82093b0c                g_audioRecBufStart
+                0xffffffff82093b10                g_audioRecBufLen
+                0xffffffff82093b14                g_audioRecBufOffset
+                0xffffffff82093b18                gSpeakerOpen_stasus
+                0xffffffff82093b19                gMicOpen_stasus
+                0xffffffff82093b1a                Speeching
+                0xffffffff82093b1c                DTMF_duration
+                0xffffffff82093b1e                short_time_keytone
+                0xffffffff82093b38                g_spk_gain
+                0xffffffff82093b3c                cii_currentDTMF
+                0xffffffff82093b48                g_powerdown_cause
+                0xffffffff82093b4c                g_gpioDirection
+                0xffffffff82093c4c                g_padac_state
+                0xffffffff82093d74                g_xcvRfIniting
+                0xffffffff82093d75                gbw
+                0xffffffff82093d76                xtal_state
+                0xffffffff82093d78                g_rfdXcvRegForceWriteError
+                0xffffffff82093d7c                g_rfdXcvRegForceReadError
+                0xffffffff82093d90                g_pDevDescrip
+                0xffffffff82093d94                g_iDevDescripCount
+                0xffffffff82093d98                g_pDsmDevInfo
+                0xffffffff82093d9c                g_iDsmDevCount
+                0xffffffff82093da0                g_hDevSem
+                0xffffffff82093da4                dtmf_frame_count
+                0xffffffff82094cc0                DecoderBuffer
+                0xffffffff82095680                g_fs_current
+                0xffffffff82095914                g_fs_super_block_table
+                0xffffffff82095918                g_fs_file_list
+                0xffffffff8209591c                g_pFsDevInfo
+                0xffffffff82095920                g_tstFsLocalErrCode
+                0xffffffff8209592d                g_GpdacBusy
+                0xffffffff8209595c                g_clk_sw
+                0xffffffff82095968                g_halCfg
+                0xffffffff8209596c                g_halDbgPalTrc
+                0xffffffff82096074                g_halDmaUserId
+                0xffffffff82096078                g_halDmaMode
+                0xffffffff8209607c                g_halDmaRegistry
+                0xffffffff82096348                l1_Sapi0FacchQueue
+                0xffffffff82096349                l1_Sapi3Queue
+                0xffffffff8209634c                l1_Sapi0SacchPtr
+                0xffffffff82096350                l1_PCtrlQueue
+                0xffffffff82096351                l1_PDataQueue
+                0xffffffff82096354                l1_PacketMeasurementReportPtr
+                0xffffffff82096358                l1_Ctx
+                0xffffffff82096dcc                SlicedCell
+                0xffffffff82096dd0                SpeedupNearList
+                0xffffffff82096dd2                DlPollingRsp
+                0xffffffff82096dd4                g_NBurstRxWin
+                0xffffffff82096de4                lap_Data
+                0xffffffff82096f14                pLapCtx
+                0xffffffff82096f18                lap_SapiIdx
+                0xffffffff8209730c                llc_Data
+                0xffffffff820973ac                pLLCCtx
+                0xffffffff82097418                g_flash_cache
+                0xffffffff82099434                g_Flag
+                0xffffffff82099438                g_Character
+                0xffffffff82099460                mmCtx
+                0xffffffff82099650                pMMCtx
+                0xffffffff82099654                mmDulCtx
+                0xffffffff82099659                g_fcch_detect_mode
+                0xffffffff8209965c                g_palDC
+                0xffffffff820996e4                g_palFrame
+                0xffffffff820997ec                FcchWin
+                0xffffffff82099834                g_SimIndex
+                0xffffffff82099838                g_palEtuParaF
+                0xffffffff82099840                g_palEtuParaD
+                0xffffffff82099844                g_palSimClkStopMode
+                0xffffffff820998ec                rld_Data
+                0xffffffff82099954                pRLDCtx
+                0xffffffff82099958                rlu_Data
+                0xffffffff82099a78                pRLUCtx
+                0xffffffff82099a7c                rr_Data
+                0xffffffff8209c114                pRRCtx
+                0xffffffff8209c118                psap_StackCfg
+                0xffffffff8209c11c                ZhiBoXing
+                0xffffffff8209c11d                UsfGran
+                0xffffffff8209c120                sap_StackCfg
+                0xffffffff8209c1d0                sap_StackDynCfg
+                0xffffffff8209c1d4                g_sms_dm_nv
+                0xffffffff820a0a80                g_SMS_DM_InitFlag
+                0xffffffff820a0a84                g_SMS_DM_Sem
+                0xffffffff820a0a8c                sxr_UsrCluster
+                0xffffffff820a0c0c                sxr_NbUsrCluster
+                0xffffffff820a0c10                g_timer_list
+                0xffffffff820a0c14                errno
+                0xffffffff820a0c20                gCSWPowerOnTime
+                0xffffffff820a0c24                G_TM_Parameters
+                0xffffffff820a0c30                TIM_Glo_Infor_Buf
+                0xffffffff820a0eec                TIM_LastErrorCode
+                0xffffffff820a0ff4                g_UctlsStatus
+                0xffffffff820a1004                g_cachenode
+                0xffffffff820a1224                g_tst_erase_suspend_count
+                0xffffffff820a1228                g_pGcBuff
+                0xffffffff820a2228                g_VDS_partition_table
+                0xffffffff820a24f8                g_vds_partition_count
+                0xffffffff820a24fc                g_psSectRef
+                0xffffffff820a2500                g_psRemainRef
+                0xffffffff820a2504                g_sFlashInfo
+                0xffffffff820a2514                g_tstVdsErrCode
+                0xffffffff820a2518                g_iFlushAllowed
+                0xffffffff820a251c                g_iVdsCacheHasInited
+                0xffffffff820a259c                g_msdfReload
+                0xffffffff820a25a0                g_MIXVOICE_TYPE
+                0xffffffff820a25a4                g_MIXVOICE_Handler
+                0xffffffff820a25a8                g_AGCEnbleFlag
+                0xffffffff820a25ac                g_SpkLevel
+                0xffffffff820a25b0                g_AudInterface
+                0xffffffff820a25b4                g_VoCRunFlag
+                0xffffffff820a2670                g_RxBuf
+                0xffffffff820a28f0                g_TxBuf
+                0xffffffff820a2b70                g_curSeqPos
+                0xffffffff820a2b74                sinvalue_1
+                0xffffffff820a2b7c                sinvalue_2
+                0xffffffff820a2b84                g_DtmfGenState
+                0xffffffff820a2b88                g_DtmfgenHandler
+                0xffffffff820a2b8c                sinparam_1
+                0xffffffff820a2b94                sinparam_2
+                0xffffffff820a2c04                api_MsNwkCap
+                0xffffffff820a2c18                api_MsRACap
+                0xffffffff820a2c80                api_LenMsRACap
+                0xffffffff820a2c84                g_htstVdsTask
+                0xffffffff820a2c88                handleApiTask
+                0xffffffff820a2c8c                handleMainTask
+                0xffffffff820a2c90                isCfwInitComplete
+                0xffffffff820a2c94                apiPlatformInitStatus
+                0xffffffff820a2c98                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                0xffffffff820a2c9c                isCfwInitCompleteBefore
+                0xffffffff820a2cac                semDeleteMessage
+                0xffffffff820a2cb0                isDeleteSuccess
+                0xffffffff820a2db4                socketIsUdpOrTcp
+                0xffffffff820a2dc8                socketDestPort
+                0xffffffff820a2e18                socketDestIp
+                0xffffffff820a2ff0                g_arsPcmBuf
+                0xffffffff820a3298                g_trace_Data
+                0xffffffff820a329c                g_tracefileHandle
+                0xffffffff820a32a4                g_calibStubLocalCtx
+                0xffffffff820a3834                CSN1Action_cc_852952723_Actions
+                0xffffffff820a3838                g_aom_sem
+                0xffffffff820a383c                CFW_Sys_Default_Proc
+                0xffffffff820a3884                AO_GoOnStatus
+                0xffffffff820a388c                AO_ControlBlock
+                0xffffffff820a3f08                SIMOCStatus
+                0xffffffff820a3f10                g_CFWStartStopStackFlag
+                0xffffffff820a3f20                IndEventInfo
+                0xffffffff820a3f28                gprs_sum
+                0xffffffff820a3f38                g_SmsFormat_Sim0
+                0xffffffff820a3f39                g_SmsFormat_Sim1
+                0xffffffff820a3f3a                g_SmsFormat_Sim2
+                0xffffffff820a3f3b                g_SmsFormat_Sim3
+                0xffffffff820a3f3c                g_SmsShowTextMode_Sim0
+                0xffffffff820a3f3d                g_SmsShowTextMode_Sim1
+                0xffffffff820a3f3e                g_SmsShowTextMode_Sim2
+                0xffffffff820a3f3f                g_SmsShowTextMode_Sim3
+                0xffffffff820a3f80                PdpContList
+                0xffffffff820a3fb8                DnsServerIP
+                0xffffffff820a4028                store_packet_head
+                0xffffffff820a402c                store_packet_end
+                0xffffffff820a4030                store_packet_cnt
+                0xffffffff820a4034                start_gprsDetach_timer
+                0xffffffff820a4078                gprs_flow_ctrl
+                0xffffffff820a4088                pQosList
+                0xffffffff820a40f8                CurAppCng
+                0xffffffff820a4108                GprsCidSavedInApp
+                0xffffffff820a410c                IPAddress
+                0xffffffff820a4110                gCOMMMode
+                0xffffffff820a4118                gbLockBCCH
+                0xffffffff820a4124                gCSDelayInfo
+                0xffffffff820a414c                g_NW_IND
+                0xffffffff820a4150                g_IMSI_INIT
+                0xffffffff820a4154                g_CFW_PowerOn
+                0xffffffff820a4158                g_SAT_IND
+                0xffffffff820a415c                g_SAT_INIT_COMPLETE
+                0xffffffff820a4160                g_TestMode_AutoResponse
+                0xffffffff820a4168                g_TestMode_AutoEMCDial
+                0xffffffff820a4170                g_TestMode_AutoEMCDialNum
+                0xffffffff820a4178                g_SMSPInfo
+                0xffffffff820a41ac                g_SimInit1Status
+                0xffffffff820a41b4                g_SimInit2Status
+                0xffffffff820a41bc                g_SimInit3Status
+                0xffffffff820a41c4                g_SimInit3Status_p2
+                0xffffffff820a41cc                bSatSimInit
+                0xffffffff820a41ec                gSimStage3Finish
+                0xffffffff820a41f0                g_cfw_sim_status
+                0xffffffff820a41f4                g_cfw_sim_adn_status
+                0xffffffff820a41f8                gSPNInfo
+                0xffffffff820a4220                nICCID
+                0xffffffff820a4234                gTestSim
+                0xffffffff820a423c                ADNInfo
+                0xffffffff820a424c                gUsimAid
+                0xffffffff820a4270                gUsimLabel
+                0xffffffff820a42b8                gUsimEfStatus
+                0xffffffff820a42c8                gUsimPin
+                0xffffffff820a4408                DIR_RECORD_NUM
+                0xffffffff820a440c                DIR_CURRENT_NUM
+                0xffffffff820a4410                Sim_Lp
+                0xffffffff820a4418                gSimDropInd
+                0xffffffff820a441c                nECC_Code
+                0xffffffff820a442c                nUsimECC_Code
+                0xffffffff820a4440                g_GETIMSI
+                0xffffffff820a4444                nCommondNum
+                0xffffffff820a44cc                gSatFreshComm
+                0xffffffff820a44d0                gSATTimerValue
+                0xffffffff820a4518                cbCtx
+                0xffffffff820a45ec                gCbReadFile
+                0xffffffff820a4600                gpLongerMsgPara
+                0xffffffff820a4604                gpLongerMsgParaIndex
+                0xffffffff820a4608                gPendingNewSms
+                0xffffffff820a460c                gNewSMSInd
+                0xffffffff820a4614                g_SMSConcat
+                0xffffffff820a46cc                g_consumers
+                0xffffffff820a47cc                DataCSN1Context
+                0xffffffff820a68cc                g_sd_sleepIn
+                0xffffffff820a72f8                g_FatCache
+                0xffffffff820a72fc                g_FatCahcheNum
+                0xffffffff820a7300                g_TstFsErrCode
+                0xffffffff820a7304                gAifClk
+                0xffffffff820a7324                ip_data
+                0xffffffff820a73c4                l1_SavedPsDataReqMsg
+                0xffffffff820a7410                audio_mode
+                0xffffffff820a7418                CSN1Action_mm_852952723_Actions
+                0xffffffff820a741c                gnMmcMode
+                0xffffffff820a7420                gAudio
+                0xffffffff820a743c                gRecord
+                0xffffffff820a7454                ev
+                0xffffffff820a7464                ev_play
+                0xffffffff820a7474                g_AMRConsumedLength
+                0xffffffff820a7478                g_AMRFILESIZE
+                0xffffffff820a7490                amr_pcmbuf_overlay
+                0xffffffff820a8890                AmrPlayer
+                0xffffffff820a88d8                g_ConsumedLength
+                0xffffffff820a88dc                g_AudioMode
+                0xffffffff820a88e0                g_AudioSeekFlag
+                0xffffffff820a88e4                g_MPEGFILESIZE
+                0xffffffff820a88e8                G_VppSBCConstY
+                0xffffffff820a8908                MpegPlayer
+                0xffffffff820a89a0                g_WAVConsumedLength
+                0xffffffff820a89a4                data_size
+                0xffffffff820a89a8                G_WavSBCConstY
+                0xffffffff820a89fc                WavPlayer
+                0xffffffff820a8aa8                a2dp_sbc_strm
+                0xffffffff820a8ab4                g_calibEquRdyFlag
+                0xffffffff820a8ab5                FINT_counter
+                0xffffffff820a8b88                neighbor_cache
+                0xffffffff820a8d40                destination_cache
+                0xffffffff820a8f20                prefix_list
+                0xffffffff820a8fac                default_router_list
+                0xffffffff820a910c                h_errno
+                0xffffffff820a9114                netif_list
+                0xffffffff820a9118                netif_default
+                0xffffffff820a911c                isPppActived
+                0xffffffff820a9120                g_ppp_ctx
+                0xffffffff820a9140                pbuf_free_ooseq_pending
+                0xffffffff820a9150                IsPUlAss
+                0xffffffff820a9154                ED_RR_P
+                0xffffffff820a9174                ED_RR_Q
+                0xffffffff820a9194                CSN1Action_rrd_852952723_Actions
+                0xffffffff820a9220                g_MallocedCount
+                0xffffffff820a9224                g_Malloced_p
+                0xffffffff820a99f8                tcp_ticks
+                0xffffffff820a99fc                tcp_active_pcbs_changed
+                0xffffffff820a9a00                tcp_bound_pcbs
+                0xffffffff820a9a04                tcp_listen_pcbs
+                0xffffffff820a9a08                tcp_active_pcbs
+                0xffffffff820a9a0c                tcp_tw_pcbs
+                0xffffffff820a9a48                tcp_input_pcb
+                0xffffffff820a9a4c                udp_pcbs
+                0xffffffff820a9a50                G_Mp3DRCHistoryBuf
+                0xffffffff820aad70                vpp_AudioJpegDecVocOpen_status
+                0xffffffff820aad78                sndRecBuffer
+                0xffffffff820aad7c                sndRecRingBuffer
+                0xffffffff820aad80                sndRecBufferLength
+                0xffffffff820aad84                rec_audioItf
+                0xffffffff820ab05c                pNetworkCallback
+                0xffffffff820ab060                pdpContextId
+                0xffffffff820ab12c                g_location
+                0xffffffff820ab19c                isAutoUpdateRtcTime
+                0xffffffff820ab310                g_hAsynFsTask
+                0xffffffff820ab358                irqParamArray
+                0xffffffff820ab3e4                spi1IrqHandler
+                0xffffffff820ab3e8                spi2IrqHandler
+                0xffffffff820ab43c                uart1_rxbuf
+                0xffffffff820ab83c                uart2_rxbuf
+                0xffffffff820abc3c                connectionCallbackParam
+                0xffffffff820abce8                DL_process_handler
+                0xffffffff820abcfc                signgam
+                0xffffffff820ae2b4                certProfile
+                0xffffffff820ae2f8                ca_pem
+                0xffffffff820ae2fc                cert_pem
+                0xffffffff820ae300                key_pem
+                0xffffffff820ae53c                _log
+
+.backup         0xffffffff82056ce0       0xa0
+ hex/workshop/SW_V2130_csdk.elf(.backup)
+ .backup        0xffffffff82056ce0       0xa0 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff82056ce0                g_halWatchdogCtx
+
+.bbsramu        0xffffffffa1981e00     0x1bf0
+ hex/workshop/SW_V2130_csdk.elf(.bbsramu)
+ .bbsramu       0xffffffffa1981e00     0x1bf0 hex/workshop/SW_V2130_csdk.elf
+                0xffffffffa1981e00                _mbbsramu
+                0xffffffffa1981e00                _bb_sram_romed_uncached_start
+                0xffffffffa1981e00                g_spcStaticBufTabSaic
+                0xffffffffa19822f0                g_spcStaticBufTab
 
 .bcpu_sramtext  0xffffffff81c00680     0x1450 load address 0xffffffff880129e0
  hex/workshop/SW_V2130_csdk.elf(.bcpu_sramtext)
@@ -11360,10 +10843,527 @@ Linker script and memory map
                 0xffffffff81c014a9                patch_spp_GetUSF1
                 0xffffffff81c015a9                patch_spp_SearchFcch
 
-.backup         0xffffffff82056ce0       0xa0
- hex/workshop/SW_V2130_csdk.elf(.backup)
- .backup        0xffffffff82056ce0       0xa0 hex/workshop/SW_V2130_csdk.elf
-                0xffffffff82056ce0                g_halWatchdogCtx
+.bcpu_bss       0xffffffff82000a00       0x10
+ hex/workshop/SW_V2130_csdk.elf(.bcpu_bss)
+ .bcpu_bss      0xffffffff82000a00       0x10 hex/workshop/SW_V2130_csdk.elf
+
+.bootramtext    0xffffffff82000b00     0x1310 load address 0xffffffff8801b7e0
+ hex/workshop/SW_V2130_csdk.elf(.bootramtext)
+ .bootramtext   0xffffffff82000b00     0x1310 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff82000ce1                hal_SpiFlashGetID
+                0xffffffff82000cf9                hal_SpiFlashSetLockCallback
+                0xffffffff82000d05                hal_SpiFlashLock
+                0xffffffff82000d1d                hal_SpiFlashUnlock
+                0xffffffff82000d35                hal_SpiFlashSetUnlockCallback
+                0xffffffff82000d41                hal_SpiFlashSleep
+                0xffffffff82000d71                hal_SpiFlashMapUncacheAddress
+                0xffffffff82000d7d                hal_SpiFlashOffset
+                0xffffffff82000d89                hal_SpiFlashSetCheckIrq
+                0xffffffff82000d95                hal_SpiFlashGetPageSize
+                0xffffffff82000d9d                hal_SpiFlashGetSectorSize
+                0xffffffff82000da5                hal_SpiFlashGetBlockSize
+                0xffffffff82000db1                hal_SpiFlashGetSize
+                0xffffffff82000dc1                hal_SpiFlashWakeup
+                0xffffffff82000dfd                hal_SpiFlashReset
+                0xffffffff82000f3d                hal_SpiFlashReadStatusRegister
+                0xffffffff82001081                hal_SpiFlashReadStatusRegisterEx
+                0xffffffff8200110d                hal_SpiFlashWriteVolatileStatusRegisterEx
+                0xffffffff820011ed                hal_SpiFlashSecurityRead
+                0xffffffff820012b5                hal_SpiFlashChipErase
+                0xffffffff82001405                hal_SpiFlashErase
+                0xffffffff820014b5                hal_SpiFlashWrite
+                0xffffffff82001621                hal_SpiFlashSecurityWrite
+                0xffffffff8200167d                hal_SpiFlashSecurityErase
+                0xffffffff820016e1                hal_SpiFlashWriteStatusRegisterEx
+                0xffffffff8200175d                hal_SpiFlashWriteStatusRegister
+                0xffffffff820017d9                hal_SpiFlashClose
+                0xffffffff82001845                hal_SpiFlashOpen
+                0xffffffff82001929                memd_FlashGetSectorLimits
+                0xffffffff820019f5                memd_SetFramsIrqIgnore
+                0xffffffff820019f9                memd_SysIsIdle
+                0xffffffff820019fd                memd_FlashGetUserFieldInfo
+                0xffffffff82001a35                memd_FlashErase2SuspendTime
+                0xffffffff82001a39                memd_SuspendEnable
+                0xffffffff82001a45                memd_SuspendDisable
+                0xffffffff82001a51                memd_SuspendIsEnable
+                0xffffffff82001a65                memd_FlashRst
+                0xffffffff82001a75                memd_FlashGetGlobalAddress
+                0xffffffff82001a8d                memd_FlashRead
+                0xffffffff82001ad5                memd_FlashOpen
+                0xffffffff82001b25                memd_FlashWrite_Respond_Irq
+                0xffffffff82001b5d                memd_FlashWrite
+                0xffffffff82001b95                memd_FlashErase
+                0xffffffff82001c45                memd_FlashErase_Respond_Irq
+                0xffffffff82001cf5                memd_DdrGetTiming
+                0xffffffff82001d41                memd_AdjustRamClk
+                0xffffffff82001dd0                g_memdFlashBankLayout
+                0xffffffff82001dec                g_memdFlashLayout
+
+.srambss        0xffffffff81c09620       0x70
+ hex/workshop/SW_V2130_csdk.elf(.srambss)
+ .srambss       0xffffffff81c09620       0x70 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff81c09620                g_halTraceDualCtx
+
+.internal_rom   0xffffffff81e00000     0x51f0
+ hex/workshop/SW_V2130_csdk.elf(.internal_rom)
+ .internal_rom  0xffffffff81e00000     0x51f0 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff81e00000                __xcpu_start
+                0xffffffff81e00180                _boot_IrqHandler
+                0xffffffff81e002d0                boot_HstMonitorX
+                0xffffffff81e00330                boot_DbgExlTrigFunction0
+                0xffffffff81e00358                monitor_entry
+                0xffffffff81e0035c                initial_stack_top_var
+                0xffffffff81e00360                boot_InvalidCache
+                0xffffffff81e00378                boot_InvalidICache
+                0xffffffff81e00398                boot_InvalidDCache
+                0xffffffff81e003b8                boot_DisableInterrupt
+                0xffffffff81e00401                boot_MonitorDoMonitoring
+                0xffffffff81e00551                boot_Monitor
+                0xffffffff81e00589                boot_UartMonitorGetBaudRate
+                0xffffffff81e0059d                boot_UartMonitorSend
+                0xffffffff81e00601                boot_UartMonitorGet
+                0xffffffff81e00665                boot_UartMonitorOpen
+                0xffffffff81e006cd                boot_UartMonitorClose
+                0xffffffff81e006dd                boot_UartMonitorAck
+                0xffffffff81e00769                boot_UartMonitorTimeOut
+                0xffffffff81e00791                boot_UartMonitorWriteProcess
+                0xffffffff81e008d9                boot_UartMonitorRpcProcess
+                0xffffffff81e00a21                boot_UartMonitorReadProcess
+                0xffffffff81e00be1                boot_UartMonitorExitProcess
+                0xffffffff81e00c35                boot_UartMonitorProcess
+                0xffffffff81e00cdd                boot_UartMonitor
+                0xffffffff81e00ffc                g_BootHostUsbFixPtr
+                0xffffffff81e01000                boot_FlushDCache
+                0xffffffff81e01440                boot_IrqDispatch
+                0xffffffff81e01484                boot_DcacheFlushAddrRange
+                0xffffffff81e015f1                mon_Event
+                0xffffffff81e01629                boot_HstCmdBasicHandler
+                0xffffffff81e01699                boot_HstMonitor
+                0xffffffff81e01705                boot_IspiGetRomedCfg
+                0xffffffff81e01791                boot_IspiOpen
+                0xffffffff81e01871                boot_IspiFlushFifos
+                0xffffffff81e01881                boot_IspiClearRxDmaDone
+                0xffffffff81e01891                boot_IspiClearTxDmaDone
+                0xffffffff81e018a1                boot_IspiClose
+                0xffffffff81e018e5                boot_IspiRxIfcChannelRelease
+                0xffffffff81e018fd                boot_IspiTxIfcChannelRelease
+                0xffffffff81e01915                boot_IspiSendData
+                0xffffffff81e01971                boot_IspiSendDataBuffer
+                0xffffffff81e019dd                boot_IspiTxFifoAvail
+                0xffffffff81e019f9                boot_IspiTxDmaDone
+                0xffffffff81e01a29                boot_IspiTxFinished
+                0xffffffff81e01a55                boot_IspiGetData
+                0xffffffff81e01a85                boot_IspiGetDataBuffer
+                0xffffffff81e01af1                boot_IspiRxFifoLevel
+                0xffffffff81e01b09                boot_IspiRxDmaDone
+                0xffffffff81e01b39                boot_IspiForcePin
+                0xffffffff81e01bcd                boot_IspiGetRxIfcTc
+                0xffffffff81e01be4                g_bootIspiRomedCfg
+                0xffffffff81e01c49                boot_UsbResetTransfert
+                0xffffffff81e01c71                boot_UsbStartTransfert
+                0xffffffff81e01d79                boot_UsbCancelTransfert
+                0xffffffff81e01da1                boot_UsbContinueTransfert
+                0xffffffff81e02311                boot_UsbInitVar
+                0xffffffff81e02339                boot_UsbOpen
+                0xffffffff81e02359                boot_UsbEpStall
+                0xffffffff81e023e1                boot_UsbRecv
+                0xffffffff81e02429                boot_UsbSend
+                0xffffffff81e024a1                boot_UsbCompletedCommand
+                0xffffffff81e024dd                boot_UsbEpEnableInterrupt
+                0xffffffff81e0252d                boot_UsbEpRxTransferedSize
+                0xffffffff81e02549                boot_UsbEpTransfertDone
+                0xffffffff81e025f9                boot_UsbClose
+                0xffffffff81e02635                boot_UsbReset
+                0xffffffff81e02d9d                boot_UsbIrqHandler
+                0xffffffff81e02fd1                boot_HostUsbDeviceCallback
+                0xffffffff81e02fdd                boot_HostUsbUartDeviceCallback
+                0xffffffff81e02fe9                boot_HostUsbClockEnable
+                0xffffffff81e03021                boot_HostUsbClose
+                0xffffffff81e03031                boot_HostUsbSend
+                0xffffffff81e03169                boot_HostUsbEvent
+                0xffffffff81e03621                boot_HostUsbRecv
+                0xffffffff81e036b9                boot_HostUsbInit
+                0xffffffff81e03719                boot_HostUsbOpen
+                0xffffffff81e03788                boot_HostUsbInterface
+                0xffffffff81e0385c                boot_romCsString
+                0xffffffff81e03890                boot_romDT
+                0xffffffff81e038a0                MutedFrame_AMR
+                0xffffffff81e038a8                MutedFrame_HR
+                0xffffffff81e038b8                MutedFrame_EFR
+                0xffffffff81e038d8                MutedFrame_FR
+                0xffffffff81e03901                atoi
+                0xffffffff81e03941                bsearch
+                0xffffffff81e039a0                _ctype
+                0xffffffff81e03aa1                memchr
+                0xffffffff81e03ae1                memcmp
+                0xffffffff81e03b10                memcpy
+                0xffffffff81e03e10                memcpyb
+                0xffffffff81e03e41                memmove
+                0xffffffff81e03f81                memscan
+                0xffffffff81e03fa0                memset
+                0xffffffff81e04341                qsort
+                0xffffffff81e04371                strcat
+                0xffffffff81e04391                strchr
+                0xffffffff81e043c1                strrchr
+                0xffffffff81e043e1                strcmp
+                0xffffffff81e04421                strcpy
+                0xffffffff81e04441                strcspn
+                0xffffffff81e04481                strlen
+                0xffffffff81e044a1                strnlen
+                0xffffffff81e044c1                strncat
+                0xffffffff81e04511                strncmp
+                0xffffffff81e04551                strncpy
+                0xffffffff81e04591                strnicmp
+                0xffffffff81e04611                strsep
+                0xffffffff81e04651                strspn
+                0xffffffff81e04681                strstr
+                0xffffffff81e046e1                strtok_r
+                0xffffffff81e04761                strtok
+                0xffffffff81e04781                strtol
+                0xffffffff81e04941                strtoul
+
+.ucbss          0xffffffffa2056da0    0x24140
+ hex/workshop/SW_V2130_csdk.elf(.ucbss)
+ .ucbss         0xffffffffa2056da0    0x24140 hex/workshop/SW_V2130_csdk.elf
+                0xffffffffa2056da0                g_pxts_buffer
+                0xffffffffa2074000                g_UsbBulkOut
+                0xffffffffa2076000                g_UsbBulkIn
+                0xffffffffa2078000                g_calibUsedSw
+                0xffffffffa2078080                g_calibHstOpInfo
+                0xffffffffa2078088                g_calibHstXcv
+                0xffffffffa2078130                g_calibHstPa
+                0xffffffffa207935c                g_calibHstSw
+                0xffffffffa20793dc                g_calibHstBb
+                0xffffffffa2079d68                g_calibHstIIR
+                0xffffffffa2079e58                g_calibStubGlobalCtxPtr
+                0xffffffffa2079e5c                g_calibStubGlobalCtx
+                0xffffffffa207a374                g_calibStubGlobalNstCtx
+                0xffffffffa207aed4                g_calibStubGlobalNstCtxPtr
+
+.sys_sram_overlay_4
+                0xffffffff81c09690       0x10 load address 0xffffffff8801b7c0
+ hex/workshop/SW_V2130_csdk.elf(.sys_sram_overlay_4)
+ .sys_sram_overlay_4
+                0xffffffff81c09690       0x10 hex/workshop/SW_V2130_csdk.elf
+
+.sramdata       0xffffffff81c085b0      0x4c0 load address 0xffffffff8801b060
+ hex/workshop/SW_V2130_csdk.elf(.sramdata)
+ .sramdata      0xffffffff81c085b0      0x4c0 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff81c085b0                _sys_sram_data_start
+                0xffffffff81c088a8                g_SwTcuCfg
+                0xffffffff81c088ac                g_paParams
+                0xffffffff81c088bc                g_swParams
+                0xffffffff81c088cc                g_TxRxSwTcuVal
+                0xffffffff81c088e4                SW
+                0xffffffff81c088e8                g_paCalibPtr
+                0xffffffff81c088ec                XCV
+                0xffffffff81c088f0                g_xcvChipId
+                0xffffffff81c088f4                g_AfcOffset
+                0xffffffff81c088f8                g_dcoffsetflag
+                0xffffffff81c088fc                g_afcDacVal
+                0xffffffff81c088fe                rxTxTimeOffset
+                0xffffffff81c08900                g_CdacDelta
+                0xffffffff81c08904                g_lastSleepMode
+                0xffffffff81c08908                g_xcvCalibPtr
+                0xffffffff81c0890c                g_xcvCmdCtx
+                0xffffffff81c08918                g_xcvCalibSetPaRamp
+                0xffffffff81c08919                g_xcvCalibPaOffset
+                0xffffffff81c0891c                g_tempgpadcvalue
+                0xffffffff81c08928                g_RxPllFreqReg_05h
+                0xffffffff81c0892c                g_bandwideVal
+                0xffffffff81c08930                g_xcvParams
+                0xffffffff81c0895c                g_CDAC
+                0xffffffff81c08960                g_xcvCalibPaRampValue
+                0xffffffff81c08968                magnitude
+                0xffffffff81c08990                pal_fch_sync_max_attempt
+                0xffffffff81c08994                g_palCtx
+                0xffffffff81c08a50                g_palDebug
+
+.irqsram        0xffffffff81c00280      0x2e0 load address 0xffffffff880142e0
+ hex/workshop/SW_V2130_csdk.elf(.irqsram)
+ .irqsram       0xffffffff81c00280      0x2e0 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff81c00280                _sxr_Irq_handler
+
+.cust_bss       0xffffffff82300050       0x60
+ hex/workshop/workshop.elf(.cust_bss)
+ .cust_bss      0xffffffff82300050       0x60 hex/workshop/workshop.elf
+                0xffffffff82300050                temp000___
+                0xffffffff82300054                g_InterfaceVtbl
+                0xffffffff82300058                mqttStatus
+                0xffffffff82300068                ci
+
+.sys_sram_overlay_5
+                0xffffffff81c09690       0x10 load address 0xffffffff8801b7d0
+ hex/workshop/SW_V2130_csdk.elf(.sys_sram_overlay_5)
+ .sys_sram_overlay_5
+                0xffffffff81c09690       0x10 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff81c0fffc                _sys_sram_non_romed_top
+
+.boot_sector_reload_struct_ptr
+                0xffffffff81c00274        0x4
+ hex/workshop/SW_V2130_csdk.elf(.boot_sector_reload_struct_ptr)
+ .boot_sector_reload_struct_ptr
+                0xffffffff81c00274        0x4 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff81c00274                g_bootSectorReloadStructPtr
+
+.ram            0xffffffff82001e10       0xe0 load address 0xffffffff8801caf0
+ hex/workshop/SW_V2130_csdk.elf(.ram)
+ .ram           0xffffffff82001e10       0xe0 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff82001e10                _ram_special_cached_start
+                0xffffffff82001e10                _ram_txt_start
+                0xffffffff82001e11                hal_SysSoftResetNoFlash
+                0xffffffff82001e35                hal_SysSoftReset
+                0xffffffff82001e71                hal_SysRestart
+                0xffffffff82001ea9                hal_GetVocDma
+                0xffffffff82001ead                hal_VocStateActive
+                0xffffffff82001ec1                hal_DmaDone
+
+.bbsram         0xffffffff81980000     0x1e00
+ hex/workshop/SW_V2130_csdk.elf(.bbsram)
+ .bbsram        0xffffffff81980000     0x1e00 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff81980000                _bb_sram_romed_cached_start
+                0xffffffff81980000                g_spcItlvBufTabSaic
+                0xffffffff81980a00                g_spcItlvBufTab
+                0xffffffff81981920                g_spcCtxStruct
+                0xffffffff81981920                _bb_sram_romed_itlv_buf_end
+
+.boot_rom_version_number
+                0xffffffff81e05ff8        0x4
+ hex/workshop/SW_V2130_csdk.elf(.boot_rom_version_number)
+ .boot_rom_version_number
+                0xffffffff81e05ff8        0x4 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff81e05ff8                g_bootRomVersionNumber
+                0xffffffff81e05ff8                _int_rom_version_number
+
+.sramucdata     0xffffffffa1c08a70      0x260 load address 0xffffffff8801b520
+ hex/workshop/SW_V2130_csdk.elf(.sramucdata)
+ .sramucdata    0xffffffffa1c08a70      0x260 hex/workshop/SW_V2130_csdk.elf
+                0xffffffffa1c08a70                _sys_sram_uncached_start
+                0xffffffffa1c08a70                g_halGdbEnabled
+                0xffffffffa1c08c3c                sxr_active_Task
+                0xffffffffa1c08c44                g_halMapAccess
+                0xffffffffa1c08c90                g_uart_busy
+                0xffffffffa1c08c94                g_uart_r_busy
+                0xffffffffa1c08c9c                g_halLpsCtx
+
+.bcpu_rom_rodata
+                0xffffffff81e937b0     0x46f0
+ hex/workshop/SW_V2130_csdk.elf(.bcpu_rom_rodata)
+ .bcpu_rom_rodata
+                0xffffffff81e937b0     0x46f0 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff81e937b0                bcpu_romCsString
+                0xffffffff81e937dc                bcpu_romDT
+                0xffffffff81e9381c                g_sppCsCrcParam
+                0xffffffff81e9398c                g_sppCsConvParam
+                0xffffffff81e93afc                g_sppCsSrcParam
+                0xffffffff81e93b8c                g_sppVitacDecParam
+                0xffffffff81e93c44                g_sppVitacPolyres
+                0xffffffff81e93c64                g_sppInputLengthBitAfs
+                0xffffffff81e93c6c                g_sppAfsReorderTables
+                0xffffffff81e93c8c                g_sppInputLengthBitAhs
+                0xffffffff81e93c94                g_sppAhsReorderTables
+                0xffffffff81e93cac                g_sppMatrixHr
+                0xffffffff81e93d8c                g_sppMatrixFrInv
+                0xffffffff81e93f94                g_sppMatrixEfr1
+                0xffffffff81e93fd8                g_sppMatrixEfr1Inv
+                0xffffffff81e9401c                g_sppMatrixEfr2Inv
+                0xffffffff81e94214                g_sppNbFwequStartSt
+                0xffffffff81e94234                g_sppNbBwequStartSt
+                0xffffffff81e94254                g_sppGsmTscSch
+                0xffffffff81e9425c                g_sppGsmTscAburst
+                0xffffffff81e94264                g_sppGsmTscAburst_1
+                0xffffffff81e9426c                g_sppGsmTscAburst_2
+                0xffffffff81e94274                g_sppGsmTscNburst
+                0xffffffff81e942f4                g_sppSaicTable
+                0xffffffff81e9433c                g_sppSaicPMatrixTable
+                0xffffffff81e94354                g_sppUsfCs2Cs3
+                0xffffffff81e9435c                g_spp_UsfCs4
+                0xffffffff81e9436c                g_sppIcSidRatscch
+                0xffffffff81e94374                g_sppIcAfsSpeech
+                0xffffffff81e9437c                g_sppIcAhsSpeech
+                0xffffffff81e94384                g_sppImAfsSid
+                0xffffffff81e943a0                g_sppImAhsSid
+                0xffffffff81e943c0                g_sppImRatscch
+                0xffffffff81e943e0                g_sppAfsSidMarker
+                0xffffffff81e943fc                g_sppAhsSidMarker
+                0xffffffff81e94418                g_sppRatscchMarker
+                0xffffffff81e94434                g_sppConvOutLengthBitAhs
+                0xffffffff81e9443c                g_sppConvOutMaskAhs
+                0xffffffff81e94454                g_spp_8TapChestTab
+                0xffffffff81e94dd4                g_sppChestTab
+                0xffffffff81e96a30                g_sppCsPuncturingTable
+                0xffffffff81e97684                g_sppPCH_vector_a
+                0xffffffff81e977dc                g_sppPCH_vector_b1
+                0xffffffff81e97830                g_sppPCH_vector_b2
+                0xffffffff81e97884                g_sppPCH_vector_b3
+                0xffffffff81e978d8                g_sppPCH_vector_b4
+                0xffffffff81e9792c                g_sppPCH_b_pos
+                0xffffffff81e97980                g_sppPCH_size_vector_b
+                0xffffffff81e979bc                g_sppMapVersion
+                0xffffffff81e97a10                g_spalMapAccess
+                0xffffffff81e97a14                g_spalMapVersion
+                0xffffffff81e97a5c                LUT_8PSK
+                0xffffffff81e97a7c                PSK8_ROTATE
+                0xffffffff81e97abc                GMSK_ROTATE
+                0xffffffff81e97afc                spal_GdbGBreak
+                0xffffffff81e97ba4                AFSfilterCI
+                0xffffffff81e97c70                AHSfilterCI
+                0xffffffff81e97d34                spcSizeFromMCS
+                0xffffffff81e97d84                g_spcMapVersion
+
+.sramtext       0xffffffff81c01fc0     0x65f0 load address 0xffffffff88014a70
+ hex/workshop/SW_V2130_csdk.elf(.sramtext)
+ .sramtext      0xffffffff81c01fc0     0x65f0 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff81c01fc0                _sys_sram_txt_start
+                0xffffffff81c01fc1                hal_LpsAllowSkipFrame
+                0xffffffff81c01fcd                hal_LpsLightSleep
+                0xffffffff81c01fe8                hal_lpsPuFsmRun
+                0xffffffff81c02295                hal_LpsDeepSleep
+                0xffffffff81c022f9                hal_LpsCalibrate
+                0xffffffff81c02431                hal_RfspiRemWinCmd
+                0xffffffff81c02469                hal_RfspiInitQueue
+                0xffffffff81c02481                hal_RfspiFlushFifo
+                0xffffffff81c024a5                hal_RfspiPushData
+                0xffffffff81c02521                hal_RfspiFillFifo
+                0xffffffff81c02689                hal_RfspiSetupFifo
+                0xffffffff81c0272d                hal_RfspiNewCmd
+                0xffffffff81c02805                hal_SpeechPushRxPopTx
+                0xffffffff81c028f5                hal_TcuSetTco
+                0xffffffff81c02905                hal_TcuClrTco
+                0xffffffff81c02915                hal_TcuClrEvtRange
+                0xffffffff81c02941                hal_TcuClrAllEvents
+                0xffffffff81c02955                hal_TcuSetEvtPtr
+                0xffffffff81c02961                hal_TcuGetEvtPtr
+                0xffffffff81c0296d                hal_TcuSetEvent
+                0xffffffff81c029e1                hal_TcuSetWrap
+                0xffffffff81c02ab4                pmd_EnterDeepSleepStep2
+                0xffffffff81c02af0                pmd_ExitDeepSleepStep1
+                0xffffffff81c02b69                pmd_ExitDeepSleepStep2
+                0xffffffff81c02bb1                pmd_EnterDeepSleepStep1
+                0xffffffff81c0301d                PowerOffset
+                0xffffffff81c03165                Pcl2dBm
+                0xffffffff81c032dd                xcvSetArfcn
+                0xffffffff81c0343d                xcvGetDigGain
+                0xffffffff81c03479                rfd_XcvGetAgcGain
+                0xffffffff81c034cd                rfd_XcvGetAfcOffset
+                0xffffffff81c034d1                rfd_XcvSetRxTxTimeOffset
+                0xffffffff81c034f9                rfd_XcvFrameStart
+                0xffffffff81c034fd                rfd_XcvFrequencyTuning
+                0xffffffff81c0364d                rfd_XcvRxOff
+                0xffffffff81c036a1                xcvReadReg
+                0xffffffff81c036d9                xcvBuildSpiCmd
+                0xffffffff81c03715                rfd_XcvSleep
+                0xffffffff81c03801                rfd_XcvWakeUp
+                0xffffffff81c03865                rfd_XcvTxOff
+                0xffffffff81c038b5                rfd_XcvTxOn
+                0xffffffff81c04315                rfd_XcvRxOn
+                0xffffffff81c04add                dtmf_calc_magnitude
+                0xffffffff81c04bb9                hal_ComregsGetSnap
+                0xffffffff81c04bc5                hal_ComregsClrMask
+                0xffffffff81c04bfd                hal_ComregsSetMask
+                0xffffffff81c04c35                hal_FintIrqGetStatus
+                0xffffffff81c04c45                hal_FintUserHandler
+                0xffffffff81c04c5d                hal_FintIrqHandler
+                0xffffffff81c04c79                hal_GoudaGetTiming
+                0xffffffff81c04c85                hal_GoudaSetTiming
+                0xffffffff81c04c95                hal_GpioClr
+                0xffffffff81c04ced                hal_GpioSet
+                0xffffffff81c04d45                hal_IrqDispatch
+                0xffffffff81c04f20                sxr_TaskSwap
+                0xffffffff81c04ff0                sxr_JobSwap
+                0xffffffff81c050f1                palSetUpperBound
+                0xffffffff81c0510d                palGetBand
+                0xffffffff81c05141                palCalcMonPower
+                0xffffffff81c05181                pal_EnableAuxClkCtrl
+                0xffffffff81c0518d                pal_SimIrqHandler
+                0xffffffff81c05231                pal_SetDummyPchDetection
+                0xffffffff81c05265                pal_GetDummyPchDetection
+                0xffffffff81c05279                pal_SetCalibProcess
+                0xffffffff81c05285                pal_SetFchDetectMode
+                0xffffffff81c052b5                pal_GetNBurstResultMultslot
+                0xffffffff81c05321                pal_UpdateCdacValue
+                0xffffffff81c05339                pal_UpdateAfcDacValue
+                0xffffffff81c05351                pal_GetCdacOffset
+                0xffffffff81c05361                pal_GetAfcDacOffset
+                0xffffffff81c05371                pal_DspIrqHandler
+                0xffffffff81c053e9                pal_FintIrqHandler
+                0xffffffff81c05409                pal_GetUsf
+                0xffffffff81c05465                pal_GetFchResult
+                0xffffffff81c05505                pal_ABurstEncoding
+                0xffffffff81c055a9                pal_GetSchResult
+                0xffffffff81c056f1                pal_GetMonResult
+                0xffffffff81c05755                palReorderWin
+                0xffffffff81c05819                pal_NblockEncoding
+                0xffffffff81c05911                pal_GetNBlockResult
+                0xffffffff81c05a8d                pal_GetNBurstResult
+                0xffffffff81c05cc9                pal_TimeTuningSuspend
+                0xffffffff81c05d2d                pal_FrequencyTuning
+                0xffffffff81c05d8d                pal_TimeTuning
+                0xffffffff81c05dfd                pal_TimeTuningSuspendCheck
+                0xffffffff81c05e35                pal_SynchronizationChange
+                0xffffffff81c05eed                pal_AuxClkOff
+                0xffffffff81c05f11                pal_FrameEnd
+                0xffffffff81c061c9                pal_FrameStart
+                0xffffffff81c064b9                palProgramTxWin
+                0xffffffff81c06605                pal_SetTxWin
+                0xffffffff81c06829                palRxBstOff
+                0xffffffff81c06891                pal_CloseFchRxWin
+                0xffffffff81c06921                palRxBstOn
+                0xffffffff81c06991                palSetBcpuTcuIrqAfterWinEndDate
+                0xffffffff81c069ed                palProgramRxWin
+                0xffffffff81c06d69                pal_SetNBurstRxWin
+                0xffffffff81c06f5d                pal_SetSchRxWin
+                0xffffffff81c0705d                pal_SetFchRxWin
+                0xffffffff81c07195                pal_SetMonRxWin
+                0xffffffff81c07271                _sxr_UpMemCallerAdd
+                0xffffffff81c07289                sxr_GetLink
+                0xffffffff81c07291                sxr_GetMemSize
+                0xffffffff81c072a5                sxr_Link
+                0xffffffff81c07311                _sxr_HFree
+                0xffffffff81c07591                _sxr_HMalloc
+                0xffffffff81c0787d                sxr_TimerDelivery
+                0xffffffff81c078b9                sxr_ClearJEvent
+                0xffffffff81c078e9                sxr_SkipFrameEndEvt
+                0xffffffff81c078fd                sxr_IsJobInitializing
+                0xffffffff81c07909                sxr_InitJobEventStatus
+                0xffffffff81c07959                sxr_AutoStop
+                0xffffffff81c079e9                sxr_WaitJEvent
+                0xffffffff81c07bb9                sxr_RaiseJEvent
+                0xffffffff81c07c9d                sxr_RaiseFrameJEvent
+                0xffffffff81c07cc9                sxr_RaiseLongLivedJEvent
+                0xffffffff81c07cf5                sxr_FrameBoundary
+                0xffffffff81c07d59                sxr_GetJobWaitingPeriod
+                0xffffffff81c07d89                sxr_WaitJDuration
+                0xffffffff81c07ea1                sxr_FrameJobScheduling
+                0xffffffff81c07fad                sxr_StopJob
+                0xffffffff81c083fd                sxr_ResumeJob
+                0xffffffff81c08509                sxr_ResetJob
+
+.mailbox        0xffffffffa1b00580      0x280
+ hex/workshop/SW_V2130_csdk.elf(.mailbox)
+ .mailbox       0xffffffffa1b00580      0x280 hex/workshop/SW_V2130_csdk.elf
+                0xffffffffa1b00580                g_mailbox
+                0xffffffffa1b00580                _dualport_sram_romed_mbx_start
+
+.misc           0xffffffff882143a0       0x20
+ hex/workshop/SW_V2130_csdk.elf(.misc)
+ .misc          0xffffffff882143a0       0x20 hex/workshop/SW_V2130_csdk.elf
+                0xffffffff882143a1                hal_clk_dump
+                0xffffffff883f6000                _user_data_start
+                0xffffffff883fa000                _calib_start
+                0xffffffff883fe000                _factory_start
+
+.bbsram_patch_ucdata
+                0xffffffffa19878a0      0x320 load address 0xffffffff880126c0
+ hex/workshop/SW_V2130_csdk.elf(.bbsram_patch_ucdata)
+ .bbsram_patch_ucdata
+                0xffffffffa19878a0      0x320 hex/workshop/SW_V2130_csdk.elf
+                0xffffffffa19878a0                _bb_sram_patch_ucdata_start
+                0xffffffffa19878a0                g_RxSaicEnFlag
+                0xffffffffa19878a4                NBlockDataOutSaic
+                0xffffffffa19879bc                g_rx_Saic_Bfi_Last_ind
+                0xffffffffa19879c0                SACCHSaic
+                0xffffffffa1987bc0                _bb_sram_patch_ucdata_end
 
 .internal_rom.crc
                 0xffffffff81e05ffc        0x4

@@ -1,5 +1,5 @@
 C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/workshop/workshop/obj/debug/main.o: \
- src/main.c src/../include/workshop.h \
+ src/main.c include/workshop.h \
  C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/include/std_inc/stdbool.h \
  C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/include/std_inc/stdint.h \
  C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/include/std_inc/stdio.h \
@@ -44,7 +44,7 @@ C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/build/workshop/workshop/obj/debug/m
  C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/include/api_socket.h \
  C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/include/api_info.h
 
-src/../include/workshop.h:
+include/workshop.h:
 
 C:/Users/Yakir/Desktop/ai-thinker/GPRS_C_SDK/include/std_inc/stdbool.h:
 

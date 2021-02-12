@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "demo_mqtt.h": "c"
+        "demo_mqtt.h": "c",
+        "workshop.h": "c"
     }
 }
